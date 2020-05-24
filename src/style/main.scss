@@ -1,0 +1,86 @@
+@import "./variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/utilities";
+
+// global
+.link-inherit {
+  a {
+    color: inherit;
+  }
+}
+.form-control:focus {
+  border-color: inherit;
+  box-shadow: none;
+}
+.transition,
+.transition * {
+  transition: all .2s;
+}
+main {
+  min-height: 100vh;
+}
+[data-toggle="dropdown"][aria-expanded="true"]::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: auto;
+}
+// header
+.navbar {
+  .navbar-brand {
+    img {
+      height: 26px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+    .navbar-toggler-icon {
+      background-size: 1.5rem;
+    }
+    &[aria-expanded="true"] {
+      .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml,<svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"></path><path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"></path></svg>');
+        background-size: 2rem;
+        opacity: 0.5;
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      font-weight: 700;
+    }
+  }
+}
+
+// footer
+footer {
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
