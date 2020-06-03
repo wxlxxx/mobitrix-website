@@ -16,3 +16,8 @@ document.querySelectorAll('[data-toggle="collapse"], [data-toggle="dropdown"]').
   }
   item.addEventListener('click', item._collapseHandle)
 })
+
+// product
+if(document.querySelectorAll('[data-page="product"]').length > 0){
+  import(/* webpackChunkName: "product" */ './ProductPage')
+}

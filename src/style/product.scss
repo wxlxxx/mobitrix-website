@@ -1,0 +1,94 @@
+@import '~slick-carousel/slick/slick.scss';
+@import "./variables";
+
+// slick
+.slick-arrow {
+  background: rgba(0, 0, 0, 0.64);
+  padding: 0.8rem 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-26px);
+  border: 0;
+  z-index: 19;
+  &:hover {
+    background: rgba(0, 0, 0, .85);
+  }
+}
+.slick-prev {
+  left: 5%;
+}
+.slick-next {
+  right: 5%;
+}
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
+  button {
+    font-size: 0;
+    border: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    margin: 0 8px;
+    padding: 0;
+    opacity: 0.5;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+}
+
+#product-banner {
+  background-color: $primary;
+  @media (min-width: 992px) {
+    background: url(../../public/images/product/bg.png) top no-repeat;
+    .box {
+      background: url(../../public/images/product/tu1.png) right top no-repeat;
+      .wrap {
+        background: url(../../public/images/product/bg2.png) center no-repeat;
+      }
+    }
+  }
+  .slick {
+    border: 1px dashed #fff;
+    background-size: contain;
+    background-position: center;
+    border-radius: 4px;
+  }
+}
+
+#slick-product-guide {
+  li {
+    cursor: pointer;
+    .box {
+      border: solid 1px #0079ff;
+      border-radius: 12px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      border: solid 1px #0079ff;
+      margin-left: 20px;
+    }
+    &.active {
+      .box {
+        background-color: #0079ff;
+        color: #fff;
+        .text-muted {
+          color: #fff !important;
+        }
+      }
+      .dot {
+        background-color: #0079ff;
+      }
+    }
+  }
+}
