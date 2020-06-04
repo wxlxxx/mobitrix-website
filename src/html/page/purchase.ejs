@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section>
+        <div id="purchase-banner" class="py-4 bg-gray" style="background-image:url(<%= process.env.IMAGE_PATH %>images/purchase/icon1.svg);background-size: 110px;background-position: left bottom;background-repeat:no-repeat;">
+          <div class="container">
+            <div class="row align-items-center no-gutters">
+              <div class="col-lg-8">
+                <h1 class="h2 mb-4">Mobitrix WhatsApp Transfer(Windows Version)</h1>
+                <ul class="list list-unstyled text-muted">
+                  <li class="mb-3">30-days money back</li>
+                  <li class="mb-3">Free tril for all</li>
+                  <li>Free tril for all</li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex align-items-center">
+                  <div class="mx-2 box-shadow rounded overflow-hidden"><img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/purchase/tu1.png" alt=""></div>
+                  <div class="mx-2 box-shadow rounded overflow-hidden"><img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/purchase/tu2.png" alt=""></div>
+                  <div class="mx-2 box-shadow rounded overflow-hidden"><img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/purchase/tu3.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="purchase-cart" class="py-5 text-center">
+          <div class="container">
+            <div class="d-flex justify-content-center align-items-center mb-5 countdown">
+              <div class="mx-2 box">
+                <p class="bg-primary rounded px-2 text-white num font-weight-bold mb-1">12</p>
+                <p class="mx-3 small font-weight-bold">DAYS</p>
+              </div>
+              <div class="mx-2 box">
+                <p class="bg-primary rounded px-2 text-white num font-weight-bold mb-1">34</p>
+                <p class="mx-3 small font-weight-bold">HOURS</p>
+              </div>
+              <div class="mx-2 box">
+                <p class="bg-primary rounded px-2 text-white num font-weight-bold mb-1">56</p>
+                <p class="mx-3 small font-weight-bold">MINUTES</p>
+              </div>
+              <div class="mx-2 box">
+                <p class="bg-primary rounded px-2 text-white num font-weight-bold mb-1">56</p>
+                <p class="mx-3 small font-weight-bold">SECONDS</p>
+              </div>
+            </div>
+            <div class="row align-items-end">
+              <div class="col-lg-4 py-3">
+                <div class="rounded box-shadow">
+                  <div class="pt-5 pb-3 rounded-top bg-primary position-relative">
+                    <img class="position-absolute" style="top:-33px;left:50%;margin-left: -136px;width: 272px;" src="<%= process.env.IMAGE_PATH %>images/purchase/icon4.svg" alt="">
+                    <h4 class="text-white">Lifetime License</h4>
+                    <p class="small text-white mb-1">2 Devices</p>
+                    <p class="small text-white mb-0">1 Windows Computer</p>
+                  </div>
+                  <hr class="m-0">
+                  <div class="p-4">
+                    <h1 class="text-danger">$29.95 <small><del class="small">$29.95</del></small></h1>
+                    <p class="h4 text-muted">You'll save $83</p>
+                    <a href="#" class="btn btn-danger"><span class="font-weight-bold px-4">BUY NOW</span></a>
+                    <p class="h6 font-weight-light my-2">OR</p>
+                    <a href="#"><img style="width:152px;" src="<%= process.env.IMAGE_PATH %>images/purchase/paypal.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 py-3">
+                <div class="rounded box-shadow">
+                  <div class="pt-4 pb-3">
+                    <h4>Lifetime License</h4>
+                    <p class="small text-muted mb-1">2 Devices</p>
+                    <p class="small text-muted mb-0">1 Windows Computer</p>
+                  </div>
+                  <hr class="m-0">
+                  <div class="p-4">
+                    <h3 class="text-muted">$29.95 <small><del class="small">$29.95</del></small></h3>
+                    <a href="#" class="btn btn-danger"><span class="font-weight-bold px-4">BUY NOW</span></a>
+                    <p class="h6 font-weight-light my-2">OR</p>
+                    <a href="#"><img style="width:152px;" src="<%= process.env.IMAGE_PATH %>images/purchase/paypal.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 py-3">
+                <div class="rounded box-shadow">
+                  <div class="pt-4 pb-3">
+                    <h4>Lifetime License</h4>
+                    <p class="small text-muted mb-1">2 Devices</p>
+                    <p class="small text-muted mb-0">1 Windows Computer</p>
+                  </div>
+                  <hr class="m-0">
+                  <div class="p-4">
+                    <h3 class="text-muted">$29.95 <small><del class="small">$29.95</del></small></h3>
+                    <a href="#" class="btn btn-danger"><span class="font-weight-bold px-4">BUY NOW</span></a>
+                    <p class="h6 font-weight-light my-2">OR</p>
+                    <a href="#"><img style="width:152px;" src="<%= process.env.IMAGE_PATH %>images/purchase/paypal.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-4 text-white" style="background:url(<%= process.env.IMAGE_PATH %>images/purchase/bg3.png) center no-repeat;background-size: cover;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 py-3">
+                <h4 class="mb-4 font-weight-bold">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h4>
+                <img style="width: 218px;" src="<%= process.env.IMAGE_PATH %>images/purchase/icon5.svg" alt="">
+              </div>
+              <div class="col-lg-6 py-3 border-left pl-lg-4">
+                <p>Copyright (c) 2018 Copyright Holder Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+                <p class="text-right">-By Emma 2020.04</p>
+              </div>
+              <div class="col-lg-2 py-3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-5 text-center">
+          <div class="container">
+            <div class="row justify-content-around mb-5">
+              <div class="col-lg-3 col-md-6 py-3">
+                <div class="border p-4 h-100">
+                  <div class="d-flex align-items-end justify-content-center mb-4" style="height: 64px">
+                    <img class="img-fluid h-100" src="/images/purchase/icon6.svg" alt="">
+                  </div>
+                  <h5 class="mb-3">Secure</h5>
+                  <ul class="text-muted text-left small">
+                    <li class="mb-1">30-days money back</li>
+                    <li class="mb-1">Free tril for all</li>
+                    <li>Free tril for all</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <div class="border p-4 h-100">
+                  <div class="d-flex align-items-end justify-content-center mb-4" style="height: 64px">
+                    <img class="img-fluid h-100" src="/images/purchase/icon7.svg" alt="">
+                  </div>
+                  <h5 class="mb-3">Secure</h5>
+                  <ul class="text-muted text-left small">
+                    <li class="mb-1">30-days money back</li>
+                    <li class="mb-1">Free tril for all</li>
+                    <li>Free tril for all</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <div class="border p-4 h-100">
+                  <div class="d-flex align-items-end justify-content-center mb-4" style="height: 64px">
+                    <img class="img-fluid h-100" src="/images/purchase/icon8.svg" alt="">
+                  </div>
+                  <h5 class="mb-3">Secure</h5>
+                  <ul class="text-muted text-left small">
+                    <li class="mb-1">30-days money back</li>
+                    <li class="mb-1">Free tril for all</li>
+                    <li>Free tril for all</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <div class="border p-4 h-100">
+                  <div class="d-flex align-items-end justify-content-center mb-4" style="height: 64px">
+                    <img class="img-fluid h-100" src="/images/purchase/icon9.svg" alt="">
+                  </div>
+                  <h5 class="mb-3">Secure</h5>
+                  <ul class="text-muted text-left small">
+                    <li class="mb-1">30-days money back</li>
+                    <li class="mb-1">Free tril for all</li>
+                    <li>Free tril for all</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex mx-auto mb-5" style="max-width: 960px;">
+              <p class="h6">We accept:</p>
+              <div>
+                <img src="" alt="">
+              </div>
+            </div>
+            <h2 class="mb-5">Worry Free Guarantee</h2>
+            <img src="" alt="">
+            <div class="text-left pt-5">
+              <h6 class="mb-4">Note:</h6>
+              <ol class="text-muted small">
+                <li class="mb-3">laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                <li class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</li>
+                <li>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
