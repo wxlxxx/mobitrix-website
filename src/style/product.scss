@@ -80,7 +80,9 @@
     }
     &.active {
       .box {
-        background-color: #0079ff;
+        background-image: url(../../public/images/product/bg-gradient.svg);
+        background-size: cover;
+        border-color: transparent;
         color: #fff;
         .text-muted {
           color: #fff !important;
@@ -88,6 +90,22 @@
       }
       .dot {
         background-color: #0079ff;
+      }
+    }
+  }
+}
+
+#product-faq {
+  .list li {
+    padding-left: 26px;
+    background-image: url(../../public/images/product/icon-right.svg);
+    background-position: left 5px;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    &:hover {
+      background-image: url(../../public/images/product/icon-bottom.svg);
+      a {
+        text-decoration: none;
       }
     }
   }

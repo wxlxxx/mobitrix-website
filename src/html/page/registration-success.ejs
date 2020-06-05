@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section>
+        <div class="py-5 text-white" style="background:url(<%= process.env.IMAGE_PATH %>images/purchase/bg3.png) center no-repeat;background-size: cover;">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-9">
+                <h1 class="text-center">Registration Successful</h1>
+              </div>
+              <div class="col-lg-3">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/install/tu1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <%= require('html-loader!../common/why-choice.ejs') %>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
