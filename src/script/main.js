@@ -21,3 +21,8 @@ document.querySelectorAll('[data-toggle="collapse"], [data-toggle="dropdown"]').
 if(document.querySelectorAll('[data-page="product"]').length > 0){
   import(/* webpackChunkName: "product" */ './ProductPage')
 }
+
+// purchase
+if(document.querySelectorAll('[data-page="purchase"]').length > 0){
+  import(/* webpackChunkName: "purchase" */ './PurchasePage')
+}

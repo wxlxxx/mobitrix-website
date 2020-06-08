@@ -48,11 +48,12 @@
 #product-banner {
   background-color: $primary;
   @media (min-width: 992px) {
-    background: url(../../public/images/product/bg.png) top no-repeat;
+    background: url(../../public/images/bg.png) top no-repeat;
     .box {
-      background: url(../../public/images/product/tu1.png) right top no-repeat;
+      background: url(../../public/images/product-tu1.png) right top no-repeat;
       .wrap {
-        background: url(../../public/images/product/bg2.png) center no-repeat;
+        background: url(../../public/images/bg2.png) center no-repeat;
+        background-size: cover;
       }
     }
   }
@@ -77,10 +78,11 @@
       border-radius: 12px;
       border: solid 1px #0079ff;
       margin-left: 20px;
+      flex: 0 0 auto;
     }
     &.active {
       .box {
-        background-image: url(../../public/images/product/bg-gradient.svg);
+        background-image: url(../../public/images/bg-gradient.svg);
         background-size: cover;
         border-color: transparent;
         color: #fff;
@@ -98,15 +100,15 @@
 #product-faq {
   .list li {
     padding-left: 26px;
-    background-image: url(../../public/images/product/icon-right.svg);
+    background-image: url(../../public/images/icon-bottom.svg);
     background-position: left 5px;
     background-repeat: no-repeat;
     background-size: 1rem;
-    &:hover {
-      background-image: url(../../public/images/product/icon-bottom.svg);
-      a {
-        text-decoration: none;
-      }
+  }
+  .box {
+    @media (min-width: 992px) {
+      background:url(../../public/images/outline1.svg) top no-repeat;
+      background-size: 100%;
     }
   }
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section>
+        <div class="py-5" style="background: url(<%= process.env.IMAGE_PATH %>/support-bg1.png) center no-repeat;">
+          <div class="container py-lg-5">
+            <h1>Mobitrix Support Center</h1>
+            <p>Our support experts will help you solve any problems you have with our software in the shortest possible time.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="bg-gray py-5 text-center">
+          <div class="container">
+            <div class="row justify-content-around link-inherit">
+              <div class="col-lg-3 py-3">
+                <div class="d-flex align-items-end justify-content-center mb-4" style="height: 80px">
+                  <img class="img-fluid h-100" src="<%= process.env.IMAGE_PATH %>/support-icon1.svg" alt="">
+                </div>
+                <h5 class="mb-3"><a href="https://www.mobitrix.com/support/presale-faqs/">Presale FAQs</a></h5>
+                <p class="text-muted small">Find presale FAQs about Mobitrix product</p>
+              </div>
+              <div class="col-lg-3 py-3">
+                <div class="d-flex align-items-end justify-content-center mb-4" style="height: 80px">
+                  <img class="img-fluid h-100" src="<%= process.env.IMAGE_PATH %>/support-icon2.svg" alt="">
+                </div>
+                <h5 class="mb-3"><a href="https://www.mobitrix.com/support/product-faqs/">Product FAQs</a></h5>
+                <p class="text-muted small">See Frequently Asked Questions about Mobitrix Products</p>
+              </div>
+              <div class="col-lg-3 py-3">
+                <div class="d-flex align-items-end justify-content-center mb-4" style="height: 80px">
+                  <img class="img-fluid h-100" src="<%= process.env.IMAGE_PATH %>/support-icon3.svg" alt="">
+                </div>
+                <h5 class="mb-3"><a href="https://www.mobitrix.com/support/register-and-uninstall-faqs/">Register  & Uninstall</a></h5>
+                <p class="text-muted small">Instantly receive your registration code and understand how to uninstall Mobitrix products.</p>
+              </div>
+              <div class="col-lg-3 py-3">
+                <div class="d-flex align-items-end justify-content-center mb-4" style="height: 80px">
+                  <img class="img-fluid h-100" src="<%= process.env.IMAGE_PATH %>/support-icon4.svg" alt="">
+                </div>
+                <h5 class="mb-3"><a href="https://www.mobitrix.com/refund-policy/">Refund Policy</a></h5>
+                <p class="text-muted small">Read our refund policy carefully before purchasing any Mobitrix products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-5">
+          <div class="container">
+            <h2 class="mb-5 text-center">General Questions</h2>
+            <ul class="list-unstyled">
+              <li>
+                <details>
+                  <summary>1. Is it safe to purchase product on your website?</summary>
+                  <p class="text-muted">Yes. It is 100% secure to purchase from our website. We guarantee that your privacy will not be disclosed when you browse our website or download and use our product.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>2.Which kind of way can I use to pay for the product on your website?</summary>
+                  <p class="text-muted">The payment methods supported on our website include PayPal, VISA, Master Card, America Express, Wire Transfer, Giro Pay, JDB, etc.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>3. I don’t receive the registration email after purchase, why?</summary>
+                  <p class="text-muted">In general, the order confirmation email will be sent to your email address in 2 hours. This email contains the information of your order details, registration code and download address. Remember to check your inbox and SPAM folder after placing your order.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>4. Is free trial version available before registration?</summary>
+                  <p class="text-muted">Yes. We offer the free trial version for all the products for users to evaluate whether it is useful for them before purchase.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>5.How long will it take to transfer WhatsApp messages?</summary>
+                  <p class="text-muted">The transferring time depends on the data size of the WhatsApp data to be transferred. Generally, it can be several minutes or an hour.</p>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-5 text-center text-white" style="background: url(<%= process.env.IMAGE_PATH %>/bg3.png) center no-repeat;background-size: cover;">
+          <div class="container">
+            <h2>Can't Find Your Answer?</h2>
+            <p class="mb-5">Feel free to contact the Mobitrix support team. We will be delighted to help you out!</p>
+            <a href="/contact-us/" class="btn btn-lg btn-danger text-uppercase">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>

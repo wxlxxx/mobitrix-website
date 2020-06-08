@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "IMAGE_PATH=/ webpack-dev-server --hot --mode=development",
-    "build": "PUBLIC_PATH=/ IMAGE_PATH=./ webpack --mode=production"
+    "start": "IMAGE_PATH=/images webpack-dev-server --hot --mode=development",
+    "build": "PUBLIC_PATH=/wp-content/themes/twentytwenty-child/ IMAGE_PATH=/wp-content/uploads/2020/06 webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "countdown": "^2.6.0",
     "jquery": "^3.5.1",
     "slick-carousel": "^1.8.1",
     "throttle-debounce": "^2.1.0"

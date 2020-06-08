@@ -56,6 +56,48 @@ main {
 .box-shadow {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+details {
+  padding-bottom: 2rem;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 1rem;
+  p {
+    padding-left: 1.625rem;
+  }
+  &[open] {
+    padding-bottom: 1rem;
+    summary {
+      color: $primary;
+      margin-bottom: 1rem;
+      &::before {
+        background-image: url('../../public/images/icon-bottom.svg');
+      }
+    }
+  }
+}
+summary {
+  position: relative;
+  font-size: 1.25rem;
+  padding-left: 1.625rem;
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-image: url('../../public/images/icon-right.svg');
+    background-size: 1rem;
+  }
+  &:hover {
+    color: $primary;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 // header
 .navbar {
   .navbar-brand {
@@ -98,7 +140,7 @@ footer {
 // home
 #news-and-tips {
   .list {
-    a {
+    li {
       position: relative;
       padding-left: 2rem;
       display: block;
@@ -113,8 +155,10 @@ footer {
         opacity: 0.25;
       }
       &:hover {
-        color: $primary;
-        text-decoration: none;
+        a {
+          color: $primary;
+          text-decoration: none;
+        }
         &::before {
           background: url('data:image/svg+xml,<svg class="bi bi-arrow-right-short" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="rgba(0,121,255,1)" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"></path><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"></path></svg>') center no-repeat;
           opacity: 1;
@@ -136,7 +180,7 @@ footer {
 #purchase-banner {
   .list li {
     padding-left: 30px;
-    background: url('../../public/images/purchase/icon2.svg') left no-repeat;background-size: 26px;
+    background: url('../../public/images/icon2.svg') left no-repeat;background-size: 26px;
   }
 }
 #purchase-cart {

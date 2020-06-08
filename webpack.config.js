@@ -126,9 +126,8 @@ const prodConfig = {
           {
             loader:'url-loader',
             options:{
-                name:'images/[name].[ext]',
-                limit:20000,
-                publicPath:'../'
+                name:'assets/img/[name].[ext]',
+                limit:20000
             }
           }
         ]
@@ -154,7 +153,7 @@ const prodConfig = {
     ]),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
-      chunkFilename: 'assets/[id].css',
+      chunkFilename: 'assets/[name].css',
     }),
     new webpack.DefinePlugin({
       'process.env.IMAGE_PATH': JSON.stringify(process.env.IMAGE_PATH)
