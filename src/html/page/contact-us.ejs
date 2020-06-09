@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section>
+        <div class="py-5 text-center text-white" style="background: url(<%= process.env.IMAGE_PATH %>/bg3.png) center no-repeat;background-size: cover;">
+          <div class="container py-lg-4">
+            <h1>Contact Us</h1>
+            <p>Mobitrix is on hand around the clock to answer all of your questions about our program.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-5">
+          <div class="container-md">
+            <p class="mb-5">Please fill your details into the form below and we will answer your query as soon as we possibly can.</p>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="InputName">Your name *</label>
+                    <input type="text" class="form-control form-control-lg" id="InputName" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="InputEmail">Your email *</label>
+                    <input type="email" class="form-control form-control-lg" id="InputEmail" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="InputOrder">Order number</label>
+                    <input type="text" class="form-control form-control-lg" id="InputOrder">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="InputSys">Operating system</label>
+                    <input type="text" class="form-control form-control-lg" id="InputSys">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="InputSubject">Subject *</label>
+                    <input type="text" class="form-control form-control-lg" id="InputSubject" required>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="InputMessage">Your Message *</label>
+                    <textarea class="form-control form-control-lg" id="InputMessage" rows="3" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center pt-4">
+                <button type="submit" class="btn btn-lg btn-primary text-uppercase">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
