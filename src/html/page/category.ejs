@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.ico" type="image/png">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section>
+        <div class="py-5 bg-gray text-center text-white" style="background: url(<%= process.env.IMAGE_PATH %>/bg3.png) center no-repeat;background-size: cover;">
+          <div class="container py-lg-4">
+            <h1>All Topics</h1>
+            <p>Find useful tips and tricks for your iPhone and Android devices.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <ul class="list-unstyled rounded overflow-hidden">
+                  <li><a href="#" class="btn btn-lg btn-primary w-100 text-left rounded-0">All Topics</a></li>
+                  <li><a href="#" class="btn btn-lg btn-secondary w-100 text-left rounded-0">WhatsApp</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-9">
+                <div class="box-shadow px-4 rounded">
+                  <ul class="list-unstyled link-inherit">
+                    <li class="py-4 border-bottom">
+                      <div>
+                        <h6><a href="#">Solution for "Microsoft Word Has Stopped Working" [100% Work]</a></h6>
+                        <p class="text-muted">Full solutions and tutorials for data backup & recovery, disk partition management, data transfer and other common issues for Windows 10, iOS & Android.</p>
+                        <div class="d-flex align-items-center small">
+                          <img height="35" src="<%= process.env.IMAGE_PATH %>/photo.png" alt="">
+                          <span class="ml-3 text-muted">by By Taylor Clark | Jan 13, 2020</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="py-4 border-bottom">
+                      <div>
+                        <h6><a href="#">Solution for "Microsoft Word Has Stopped Working" [100% Work]</a></h6>
+                        <p class="text-muted">Full solutions and tutorials for data backup & recovery, disk partition management, data transfer and other common issues for Windows 10, iOS & Android.</p>
+                        <div class="d-flex align-items-center small">
+                          <img height="35" src="<%= process.env.IMAGE_PATH %>/photo.png" alt="">
+                          <span class="ml-3 text-muted">by By Taylor Clark | Jan 13, 2020</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
