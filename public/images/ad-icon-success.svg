@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>success</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-24.0182996%" y1="-13.1551047%" x2="137.025067%" y2="117.771853%" id="linearGradient-1">
+            <stop stop-color="#44E0D7" offset="0%"></stop>
+            <stop stop-color="#68FF9F" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <filter x="-25.0%" y="-12.5%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.356862745   0 0 0 0 0.956862745   0 0 0 0 0.705882353  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="同步助手web-导航条上滑" transform="translate(-751.000000, -3504.000000)">
+            <g id="banner备份-4" transform="translate(0.000000, 3205.000000)">
+                <g id="编组-10" transform="translate(374.000000, 71.000000)">
+                    <g id="编组-7" transform="translate(0.000000, 87.000000)">
+                        <g id="编组-12备份" transform="translate(304.000000, 141.000000)">
+                            <g id="success" transform="translate(83.000000, 0.000000)">
+                                <g id="矩形">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                </g>
+                                <polyline id="路径-4" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" points="25 41.2993393 34.6790208 51 55 29"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

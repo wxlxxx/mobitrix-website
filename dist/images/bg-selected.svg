@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="621px" height="165px" viewBox="0 0 621 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>how选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="11.1396679%" y1="48.1572627%" x2="116.101997%" y2="54.3111837%" id="linearGradient-1">
+            <stop stop-color="#5BD0FF" offset="0%"></stop>
+            <stop stop-color="#5091FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10,0 L579,0 C584.522847,-1.01453063e-15 589,4.4771525 589,10 L589,54.2563519 C589,57.7894011 590.556932,61.142916 593.255777,63.4229763 L600.520579,69.5604867 C602.208108,70.9861589 602.420385,73.5099071 600.994713,75.197436 C600.883204,75.3294258 600.76326,75.4540516 600.635635,75.5705304 L592.910609,82.6208733 C590.419385,84.8945204 589,88.1115963 589,91.4843798 L589,135 C589,140.522847 584.522847,145 579,145 L10,145 C4.4771525,145 6.76353751e-16,140.522847 0,135 L0,10 C-6.76353751e-16,4.4771525 4.4771525,9.89631482e-15 10,0 Z" id="path-2"></path>
+        <filter x="-2.6%" y="-9.7%" width="105.0%" height="122.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-18.3%" y="-74.8%" width="136.2%" height="252.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="100" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="同步助手web-导航条上滑" transform="translate(-350.000000, -1322.000000)">
+            <g id="banner备份" transform="translate(0.000000, 1029.000000)">
+                <g id="编组-10" transform="translate(360.000000, 66.000000)">
+                    <g id="编组-6" transform="translate(0.000000, 235.000000)">
+                        <g id="how选中">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

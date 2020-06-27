@@ -1,4 +1,5 @@
 import '../style/main.scss'
+import Swal from 'sweetalert2'
 
 // header
 document.querySelectorAll('[data-toggle="collapse"], [data-toggle="dropdown"]').forEach((item, i) => {
@@ -16,10 +17,32 @@ document.querySelectorAll('[data-toggle="collapse"], [data-toggle="dropdown"]').
   }
   item.addEventListener('click', item._collapseHandle)
 })
+if(document.querySelectorAll('#fixed-navbar').length > 0){
+  window.addEventListener('scroll', function(){
+    if(window.scrollY >= 200){
+      document.querySelectorAll('#fixed-navbar')[0].classList.remove('d-none')
+    }else {
+      document.querySelectorAll('#fixed-navbar')[0].classList.add('d-none')
+    }
+  })
+}
+
+// contact form 7 success popup
+if(window.location.hash.match('#wpcf7') != null){
+  Swal.fire({
+    icon: 'success',
+    text: 'Thank you for your message. It has been sent.'
+  })
+}
 
 // product
 if(document.querySelectorAll('[data-page="product"]').length > 0){
   import(/* webpackChunkName: "product" */ './ProductPage')
+}
+
+// product
+if(document.querySelectorAll('[data-page="ad"]').length > 0){
+  import(/* webpackChunkName: "ad" */ './Ad')
 }
 
 // purchase

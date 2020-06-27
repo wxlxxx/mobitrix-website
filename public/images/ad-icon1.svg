@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-12.4585512%" y1="-12.6165012%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3FA1F4" offset="0%"></stop>
+            <stop stop-color="#2B83FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="同步助手web-导航条上滑" transform="translate(-353.000000, -2814.000000)">
+            <g id="备份" transform="translate(353.000000, 2814.000000)">
+                <circle id="椭圆形" fill="url(#linearGradient-1)" cx="21" cy="21" r="21"></circle>
+                <rect id="矩形备份-9" stroke="#FFFFFF" stroke-width="2.47058824" x="17.2941176" y="11.1176471" width="12.3529412" height="14.8235294" rx="1.23529412"></rect>
+                <rect id="矩形" stroke="#FFFFFF" stroke-width="2.47058824" x="11.1176471" y="16.0588235" width="12.3529412" height="14.8235294" rx="1.23529412"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

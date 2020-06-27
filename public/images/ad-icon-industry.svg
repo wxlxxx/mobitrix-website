@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>industry</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="146.874977%" y1="158.725715%" x2="-10.1038063%" y2="-18.6181676%" id="linearGradient-1">
+            <stop stop-color="#47F3FE" offset="0%"></stop>
+            <stop stop-color="#5541FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <filter x="-25.0%" y="-12.5%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.301960784   0 0 0 0 0.647058824   0 0 0 0 0.996078431  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="同步助手web-导航条上滑" transform="translate(-441.000000, -3504.000000)">
+            <g id="banner备份-4" transform="translate(0.000000, 3205.000000)">
+                <g id="编组-10" transform="translate(374.000000, 71.000000)">
+                    <g id="编组-7" transform="translate(0.000000, 87.000000)">
+                        <g id="编组-12" transform="translate(0.000000, 141.000000)">
+                            <g id="industry" transform="translate(77.000000, 0.000000)">
+                                <g id="矩形">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                </g>
+                                <path d="M35.5570695,23 L47.3354568,23 C48.4400263,23 49.3354568,23.8954305 49.3354568,25 C49.3354568,25.3102897 49.26326,25.6163236 49.1245766,25.8938963 L43.5873198,36.9766305 C43.0936345,37.9647341 43.4944397,39.1659612 44.4825433,39.6596465 C44.7601159,39.7983299 45.0661499,39.8705268 45.3764396,39.8705268 L49.1782147,39.8705268 C50.2827842,39.8705268 51.1782147,40.7659573 51.1782147,41.8705268 C51.1782147,42.3481591 51.0072806,42.8100217 50.6963311,43.1725724 L36.4361471,59.7991939 C35.7170472,60.6376264 34.4544176,60.7343646 33.6159851,60.0152647 C33.0976359,59.5706912 32.8419454,58.8923713 32.9378542,58.2162552 L34.6309161,46.2808932 C34.7860491,45.1872719 34.025254,44.1749565 32.9316327,44.0198235 C32.8385837,44.0066242 32.7447201,44 32.6507396,44 L31.5292332,44 C30.4246637,44 29.5292332,43.1045695 29.5292332,42 C29.5292332,41.8447305 29.5473144,41.6899891 29.5831117,41.5389024 L33.6109479,24.5389024 C33.8246537,23.6369297 34.6301255,23 35.5570695,23 Z" id="路径-3" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

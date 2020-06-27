@@ -7,6 +7,29 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
+    <nav id="fixed-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-none">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#"><img class="mr-2" src="/images/logo-sm.png" alt="">Mobile WhatsApp Transfer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeaderContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarHeaderContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/guide/">Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/whatsapp-transfer-backup-restore/reviews/">Reviews</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a class="btn btn-sm btn-primary mx-2" href="/guide/">Download</a>
+              <a class="btn btn-sm btn-danger mx-2" href="/guide/">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main>
       <div data-page="product"></div>
       <section>

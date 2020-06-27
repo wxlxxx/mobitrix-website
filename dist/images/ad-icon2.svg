@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>还原</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-25.7062592%" y1="-14.5274022%" x2="173.560532%" y2="157.61046%" id="linearGradient-1">
+            <stop stop-color="#44CAE0" offset="0%"></stop>
+            <stop stop-color="#68FF87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="同步助手web-导航条上滑" transform="translate(-353.000000, -2962.000000)">
+            <g id="还原" transform="translate(353.000000, 2962.000000)">
+                <g id="备份-2" fill="url(#linearGradient-1)">
+                    <circle id="椭圆形" cx="21" cy="21" r="21"></circle>
+                </g>
+                <path d="M14.2626152,14.7762015 C12.6924822,16.3839008 11.7254129,18.5794104 11.7254129,21 C11.7254129,25.9288716 15.735098,29.9245115 20.6812953,29.9245115 C25.6274925,29.9245115 29.6371776,25.9288716 29.6371776,21 C29.6371776,16.0711284 25.6274925,12.0754885 20.6812953,12.0754885 L24.0893487,10.1598056" id="路径" stroke="#FFFFFF" stroke-width="2.47058824" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
