@@ -292,3 +292,21 @@ article {
     }
   }
 }
+
+.screen-reader-text {
+  display: none;
+}
+.navigation.pagination {
+  .nav-links {
+    margin: 0 auto;
+    font-size: 18px;
+    .page-numbers {
+      padding: 5px;
+      margin: 0 5px;
+    }
+    .nav-prev-text,
+    .nav-next-text {
+      display: none;
+    }
+  }
+}
