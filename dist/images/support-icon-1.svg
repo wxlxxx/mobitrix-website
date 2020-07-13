@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Product Guide</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="146.874977%" y1="158.725715%" x2="-10.1038063%" y2="-18.6181676%" id="linearGradient-1">
+            <stop stop-color="#47F3FE" offset="0%"></stop>
+            <stop stop-color="#5541FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <filter x="-25.0%" y="-12.5%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.301960784   0 0 0 0 0.647058824   0 0 0 0 0.996078431  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="重构-Support页面" transform="translate(-442.000000, -633.000000)">
+            <g id="banner备份-4" transform="translate(0.000000, 504.000000)">
+                <g id="编组-10" transform="translate(361.000000, 86.000000)">
+                    <g id="编组-7">
+                        <g id="编组-12">
+                            <g id="编组">
+                                <g id="Product-Guide" transform="translate(91.000000, 43.000000)">
+                                    <g id="矩形">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    </g>
+                                    <g id="指南针-(1)" transform="translate(17.000000, 17.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <path d="M22.9995156,0.5 C35.5120013,0.5 45.6138247,10.6020408 45.4990313,23 C45.4990313,35.3979592 35.3972079,45.5 22.9995156,45.5 C10.6018233,45.5 0.5,35.3979591 0.5,23 C0.5,10.6020408 10.6018233,0.5 22.9995156,0.5 Z M33.101339,13.0127551 C32.9865455,12.7831633 32.5273717,12.7831633 32.1829914,12.8979592 L32.1829914,12.8979592 L18.1781909,17.4897959 C17.8338105,17.6045919 17.4894302,17.9489796 17.3746367,18.2933674 L17.3746367,18.2933674 L12.7828988,32.2984694 C12.5533119,32.6428571 12.6681054,32.9872449 12.8976923,33.2168367 C13.0124857,33.4464286 13.4716595,33.4464286 13.8160398,33.3316326 L13.8160398,33.3316326 L27.8208404,28.7397959 C28.1652207,28.625 28.5096011,28.2806122 28.6243945,27.9362245 L28.6243945,27.9362245 L33.2161324,13.9311225 C33.4457193,13.5867347 33.3309259,13.2423469 33.101339,13.0127551 Z M23,19.5 C24.9833334,19.5 26.5,21.1333333 26.5,23 C26.5,24.9833333 24.9833334,26.5 23,26.5 C21.0166666,26.5 19.5,24.8666667 19.5,23 C19.5,21.0166667 21.1333333,19.5 23,19.5 Z" id="形状结合"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

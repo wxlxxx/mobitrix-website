@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>success</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-24.0182996%" y1="-13.1551047%" x2="137.025067%" y2="117.771853%" id="linearGradient-1">
+            <stop stop-color="#44E0D7" offset="0%"></stop>
+            <stop stop-color="#68FF9F" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <filter x="-25.0%" y="-12.5%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.356862745   0 0 0 0 0.956862745   0 0 0 0 0.705882353  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="同步助手web-关于我们" transform="translate(-911.000000, -1719.000000)">
+            <g id="banner备份-4" transform="translate(0.000000, 1473.000000)">
+                <g id="编组-10" transform="translate(428.000000, 75.000000)">
+                    <g id="编组-7" transform="translate(0.000000, 83.000000)">
+                        <g id="编组-12备份" transform="translate(410.000000, 88.000000)">
+                            <g id="success" transform="translate(83.000000, 0.000000)">
+                                <g id="矩形">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                </g>
+                                <g id="邮件" transform="translate(19.000000, 24.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <path d="M34.7892921,0 L7.2107079,0 C3.22948607,0.00267855088 0.00275613086,3.13858202 0,7.00773982 L0,25.7678916 C0.00275192526,29.6378376 3.22867789,32.7751324 7.2107079,32.7804878 L34.7892921,32.7804878 C38.7713221,32.7751324 41.9972481,29.6378376 42,25.7678916 L42,7.00773982 C41.9972439,3.13858201 38.7705139,0.00267853323 34.7892921,0 Z M38.6120167,7.00773982 L38.6120167,25.7678916 C38.6092638,27.8185876 36.8993832,29.4803382 34.7892921,29.4830135 L7.2107079,29.4830135 C5.10142715,29.4803339 3.39297835,27.8178018 3.39297835,25.7678916 L3.39297835,7.00773982 C3.39249621,6.55426602 3.47891918,6.10467079 3.64782868,5.68195121 L18.1392028,17.5169214 C19.7992785,18.8865999 22.2357006,18.8865999 23.8957763,17.5169214 L38.3871505,5.67709486 C38.5463338,6.10326104 38.6225853,6.55447942 38.6120167,7.00773982 Z M21.692088,15.0013225 C21.2929219,15.3306671 20.7070781,15.3306671 20.307912,15.0013225 L6.17132659,3.43830894 C6.50930329,3.34434725 6.85917472,3.29694017 7.2107079,3.2974698 L34.7892921,3.2974698 C35.1408253,3.29694017 35.4906967,3.34434724 35.8286734,3.43830894 L21.692088,15.0013225 Z" id="形状"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

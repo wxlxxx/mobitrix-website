@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Registration Code </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-24.0182996%" y1="-13.1551047%" x2="137.025067%" y2="117.771853%" id="linearGradient-1">
+            <stop stop-color="#44E0D7" offset="0%"></stop>
+            <stop stop-color="#68FF9F" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <filter x="-25.0%" y="-12.5%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.356862745   0 0 0 0 0.956862745   0 0 0 0 0.705882353  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="重构-Support页面" transform="translate(-1067.000000, -638.000000)">
+            <g id="banner备份-4" transform="translate(0.000000, 504.000000)">
+                <g id="编组-10" transform="translate(361.000000, 86.000000)">
+                    <g id="编组-7">
+                        <g id="编组-12">
+                            <g id="编组-2" transform="translate(624.000000, 1.000000)">
+                                <g id="编组-12备份" transform="translate(9.000000, 47.000000)">
+                                    <g id="Registration-Code-" transform="translate(83.000000, 0.000000)">
+                                        <g id="矩形">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                        </g>
+                                        <g id="用户权限,钥匙_jurassic" transform="translate(22.000000, 19.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                            <path d="M18.5614035,-3.90798505e-14 L35.8560017,6.12828947 C35.8560017,6.12828947 38.7063137,25.1789474 35.8560017,30.6364035 C33.4317149,35.2767544 18.5614035,45.1929825 18.5614035,45.1929825 C18.5614035,45.1929825 3.69109214,35.2767544 1.26680536,30.6364035 C-1.58350671,25.1789474 1.26680536,6.12828947 1.26680536,6.12828947 L1.26680536,6.12828947 L18.5614035,-3.90798505e-14 Z M18.5614035,9.10921053 C15.0466949,9.10921053 12.1862393,11.8934211 12.1862393,15.3182018 C12.1862393,18.2133772 14.2352181,20.6495614 16.9891673,21.3355263 L16.9891673,21.3355263 L16.9891673,35.2364035 L20.1336397,35.2364035 L20.1336397,29.1888158 L26.4225845,29.1888158 L26.4225845,25.9607456 L20.1336397,25.9607456 L20.1336397,21.3355263 C22.8926606,20.6546053 24.9365677,18.2133772 24.9365677,15.3182018 C24.9365677,11.8934211 22.0761122,9.10921053 18.5614035,9.10921053 Z M18.5767819,11.8496215 C20.5038134,11.8496215 22.0767819,13.4189955 22.0767819,15.3496215 C22.0767819,17.2802476 20.5038134,18.8496215 18.5767819,18.8496215 C16.6497504,18.8496215 15.0767819,17.2802476 15.0767819,15.3496215 C15.0767819,13.4189955 16.6497504,11.8496215 18.5767819,11.8496215 Z" id="形状结合"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

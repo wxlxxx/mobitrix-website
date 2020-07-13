@@ -9,96 +9,148 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
+    <nav id="fixed-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-none">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#"><img class="mr-2" src="/images/logo-sm.png" alt="">Mobile WhatsApp Transfer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeaderContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="font-weight-bold w-100 pl-lg-5">[Fixed] Can't Find or Open Recycle Bin Windows 10/8/7</div>
+      </div>
+    </nav>
     <main>
       <article>
         <section>
-          <div class="py-5 bg-gray text-center">
-            <div class="container py-lg-4">
-              <h1>[Fixed] Can't Find or Open Recycle Bin Windows 10/8/7</h1>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="py-5">
+          <div class="py-2">
             <div class="container">
-              <div class="py-1 bg-linear-primary"></div>
-              <div class="border border-primary border-top-0 p-4">
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <ul class="list-unstyled mb-5">
-                  <li class="mb-3"><a href="#a1">Part1: xxx</a></li>
-                  <li class="mb-3"><a href="#a2">Part2: xxx</a></li>
-                  <li class="mb-3"><a href="#a3">Part3: xxx</a></li>
-                  <li class="mb-3"><a href="#a4">Part4: xxx</a></li>
-                  <li class="mb-3"><a href="#a5">Part5: xxx</a></li>
-                </ul>
-                <ul class="list-unstyled mb-5">
-                  <li>
-                    <details>
-                      <summary>1. Is it safe to purchase product on your website?</summary>
-                      <p class="text-muted">Yes. It is 100% secure to purchase from our website. We guarantee that your privacy will not be disclosed when you browse our website or download and use our product.</p>
-                    </details>
+              <nav aria-label="breadcrumb" class="small">
+                <ol class="breadcrumb bg-transparent link-inherit mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="/">
+                      <svg class="bi bi-house-door-fill mr-1" style="vertical-align: -2px;" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"></path>
+                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
+                      </svg>Home
+                    </a>
                   </li>
-                  <li>
-                    <details>
-                      <summary>2.Which kind of way can I use to pay for the product on your website?</summary>
-                      <p class="text-muted">The payment methods supported on our website include PayPal, VISA, Master Card, America Express, Wire Transfer, Giro Pay, JDB, etc.</p>
-                    </details>
-                  </li>
-                  <li>
-                    <details>
-                      <summary>3. I don’t receive the registration email after purchase, why?</summary>
-                      <p class="text-muted">In general, the order confirmation email will be sent to your email address in 2 hours. This email contains the information of your order details, registration code and download address. Remember to check your inbox and SPAM folder after placing your order.</p>
-                    </details>
-                  </li>
-                </ul>
-                <div class="bg-secondary p-3 mb-5">
-                  <ul class="text-danger link-inherit pl-3">
-                    <li class="mb-2"><a href="#a1">Part1: xxx</a></li>
-                    <li class="mb-2"><a href="#a2">Part2: xxx</a></li>
-                    <li class="mb-2"><a href="#a3">Part3: xxx</a></li>
+                  <li class="breadcrumb-item"><a href="https://www.mobitrix.com/whatsapp/">WhatsApp</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">How to Move WhatsApp Backup from iCloud to Google Drive</li>
+                </ol>
+              </nav>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="rounded overflow-hidden box-shadow">
+                    <div class="bg-linear-primary h4 p-3 text-white mb-0">Catalog</div>
+                    <div class="p-3">
+                      <ul class="list-unstyled link-inherit small catalog">
+                        <li class="active"><a href="#">Feature 1: Transfer WhatsApp from iPhone to iPhone</a></li>
+                        <li><a href="#">Feature 1: Transfer WhatsApp from iPhone to iPhone</a></li>
+                        <li><a href="#">Feature 3: Transfer WhatsApp from Android to iPhone</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="bg-linear-primary text-white p-4 rounded">
+                    <h1 class="h2">[Fixed] Can't Find or Open Recycle Bin Windows 10/8/7</h1>
+                  </div>
+                  <div class="d-flex align-items-center my-3 rounded box-shadow p-4">
+                    <div class="pr-4">
+                      <img style="height: 67px;" class="mb-0" src="<%= process.env.IMAGE_PATH %>/user-3.png" alt="">
+                    </div>
+                    <div class="text-muted w-100">
+                      <h6 class="mb-1">Heather Marston</h6>
+                      <p class="mb-0">July 8，2016（Updated：July8，2020）. Filed to：WhatsApp</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-muted small mb-2">2 min read</p>
+                      <ul class="star-group">
+                        <li class="star-full"></li>
+                        <li class="star-full"></li>
+                        <li class="star-full"></li>
+                        <li class="star-full"></li>
+                        <li class="star-full"></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <ul class="list-unstyled mb-5">
+                    <li class="mb-3"><a href="#a1">Part1: xxx</a></li>
+                    <li class="mb-3"><a href="#a2">Part2: xxx</a></li>
+                    <li class="mb-3"><a href="#a3">Part3: xxx</a></li>
+                    <li class="mb-3"><a href="#a4">Part4: xxx</a></li>
+                    <li class="mb-3"><a href="#a5">Part5: xxx</a></li>
+                  </ul>
+                  <ul class="list-unstyled mb-5">
+                    <li>
+                      <details>
+                        <summary>1. Is it safe to purchase product on your website?</summary>
+                        <p class="text-muted">Yes. It is 100% secure to purchase from our website. We guarantee that your privacy will not be disclosed when you browse our website or download and use our product.</p>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>2.Which kind of way can I use to pay for the product on your website?</summary>
+                        <p class="text-muted">The payment methods supported on our website include PayPal, VISA, Master Card, America Express, Wire Transfer, Giro Pay, JDB, etc.</p>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary>3. I don’t receive the registration email after purchase, why?</summary>
+                        <p class="text-muted">In general, the order confirmation email will be sent to your email address in 2 hours. This email contains the information of your order details, registration code and download address. Remember to check your inbox and SPAM folder after placing your order.</p>
+                      </details>
+                    </li>
+                  </ul>
+                  <div class="bg-secondary p-3 mb-5">
+                    <ul class="text-danger link-inherit pl-3">
+                      <li class="mb-2"><a href="#a1">Part1: xxx</a></li>
+                      <li class="mb-2"><a href="#a2">Part2: xxx</a></li>
+                      <li class="mb-2"><a href="#a3">Part3: xxx</a></li>
+                    </ul>
+                  </div>
+                  <h2 class="mb-4">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h2>
+                  <h3 class="mb-4">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h3>
+                  <h4 class="mb-4">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h4>
+                  <div class="p-3 bg-secondary mb-4" style="border-left: solid 4px var(--primary);">
+                    <h3 class="mb-0">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h3>
+                  </div>
+                  <div class="p-3 bg-secondary mb-4" style="border-left: solid 4px var(--danger);">
+                    <h4 class="mb-0">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h4>
+                  </div>
+                  <div class="py-4">
+                    <a href="#" class="mr-lg-5 my-3 d-inline-block"><img src="<%= process.env.IMAGE_PATH %>/download-win.png" alt=""></a>
+                    <a href="#" class="mr-lg-5 my-3 d-inline-block"><img src="<%= process.env.IMAGE_PATH %>/download-mac.png" alt=""></a>
+                  </div>
+                  <div class="bg-secondary p-4 mb-4">
+                    <ul class="pl-3">
+                      <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                      <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                      <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                      <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                    </ul>
+                  </div>
+                  <ul class="pl-3 mb-5">
+                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+                  </ul>
+                  <h4>Note:</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <div class="mb-4">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/article-tu1.png" alt="">
+                  </div>
+                  <h4 class="mb-4">You also like:</h4>
+                  <ul class="pl-3 text-primary">
+                    <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
+                    <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
+                    <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
+                    <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
+                    <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
                   </ul>
                 </div>
-                <h2 class="mb-4">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h2>
-                <h3 class="mb-4">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h3>
-                <h4 class="mb-4">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h4>
-                <div class="p-3 bg-secondary mb-4" style="border-left: solid 4px var(--primary);">
-                  <h3 class="mb-0">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h3>
-                </div>
-                <div class="p-3 bg-secondary mb-4" style="border-left: solid 4px var(--danger);">
-                  <h4 class="mb-0">Copyright (c) 2018 Copyright Holder All Rights Reserved.</h4>
-                </div>
-                <div class="py-4">
-                  <a href="#" class="mr-lg-5 my-3 d-inline-block"><img src="<%= process.env.IMAGE_PATH %>/download-win.png" alt=""></a>
-                  <a href="#" class="mr-lg-5 my-3 d-inline-block"><img src="<%= process.env.IMAGE_PATH %>/download-mac.png" alt=""></a>
-                </div>
-                <div class="bg-secondary p-4 mb-4">
-                  <ul class="pl-3">
-                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                    <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                  </ul>
-                </div>
-                <ul class="pl-3 mb-5">
-                  <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                  <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                  <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                  <li class="mb-3">Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
-                </ul>
-                <h4>Note:</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="mb-4">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/article-tu1.png" alt="">
-                </div>
-                <h4 class="mb-4">You also like:</h4>
-                <ul class="pl-3 text-primary">
-                  <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
-                  <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
-                  <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
-                  <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
-                  <li class="mb-3"><a href="#">Copyright (c) 2018 Copyright Holder All Rights Reserved.</a></li>
-                </ul>
               </div>
+
               <div class="d-flex align-items-center my-5">
                 <div class="pr-4">
                   <img src="<%= process.env.IMAGE_PATH %>/photo.png" alt="">
@@ -109,17 +161,17 @@
                 </div>
               </div>
               <nav aria-label="breadcrumb" class="small">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb bg-transparent link-inherit">
                   <li class="breadcrumb-item">
                     <a href="/">
                       <svg class="bi bi-house-door-fill mr-1" style="vertical-align: -2px;" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
-                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"></path>
+                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
                       </svg>Home
                     </a>
                   </li>
-                  <li class="breadcrumb-item"><a href="#">WhatsApp</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Find or Open Recycle Bin Windows 10/8/7</li>
+                  <li class="breadcrumb-item"><a href="https://www.mobitrix.com/whatsapp/">WhatsApp</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">How to Move WhatsApp Backup from iCloud to Google Drive</li>
                 </ol>
               </nav>
             </div>

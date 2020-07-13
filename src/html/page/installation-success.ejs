@@ -8,22 +8,35 @@
   <body>
     <%= require('html-loader!../common/header.ejs') %>
     <main>
-      <div data-page="product"></div>
       <section>
-        <div class="py-5 text-white" style="background:url(<%= process.env.IMAGE_PATH %>/purchase-bg3.png) center no-repeat;background-size: cover;">
+        <div class="py-5 text-center" style="background:url(<%= process.env.IMAGE_PATH %>/banner-bg.svg) center no-repeat;">
           <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-9">
-                <h1 class="text-center">Installation Successful</h1>
-              </div>
-              <div class="col-lg-3">
-                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/install-tu1.png" alt="">
-              </div>
-            </div>
+            <i><img src="<%= process.env.IMAGE_PATH %>/success.svg"/></i>
+            <h1>Installation Successful</h1>
           </div>
         </div>
       </section>
-      <%= require('html-loader!../common/guide-content.ejs') %>
+      <section>
+        <div class="py-5">
+          <div class="container">
+            <h2 class="text-center mb-5">How to Use Mobitrix for WhatsApp</h2>
+            <ul class="list-unstyled">
+              <li>
+                <details>
+                  <summary>1. What can I do with the free version of ReiBoot iOS?</summary>
+                  <p>You can use the free version for free without any registration code. The free version of ReiBoot iOS can help your device enter recovery mode with one click for free and exit recovery mode with one click for free within 5 times. Some simple system problems can be solved by exiting recovery mode. If your system problems are more complicated, you can upgrade to pro version to repair it.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>1. What can I do with the free version of ReiBoot iOS?</summary>
+                  <p>You can use the free version for free without any registration code. The free version of ReiBoot iOS can help your device enter recovery mode with one click for free and exit recovery mode with one click for free within 5 times. Some simple system problems can be solved by exiting recovery mode. If your system problems are more complicated, you can upgrade to pro version to repair it.</p>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <%= require('html-loader!../common/why-choice.ejs') %>
     </main>
     <%= require('html-loader!../common/footer.ejs') %>

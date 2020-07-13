@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>对勾</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-24.0182996%" y1="-13.1551047%" x2="137.025067%" y2="117.771853%" id="linearGradient-1">
+            <stop stop-color="#44E0D7" offset="0%"></stop>
+            <stop stop-color="#68FF9F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="重构-购买页面" transform="translate(-360.000000, -199.000000)">
+            <g id="footer-2备份" transform="translate(0.000000, 70.000000)">
+                <g id="footer">
+                    <g id="编组-19">
+                        <g id="编组-3" transform="translate(360.000000, 30.000000)">
+                            <g id="对勾" transform="translate(0.000000, 99.000000)">
+                                <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="18" height="18" rx="9"></rect>
+                                <polyline id="路径-4" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" points="5.625 9.29235133 7.80277969 11.475 12.375 6.525"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

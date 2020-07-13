@@ -26,6 +26,16 @@ if(document.querySelectorAll('#fixed-navbar').length > 0){
     }
   })
 }
+if(document.querySelectorAll('.catalog').length > 0){
+  document.querySelectorAll('.catalog li').forEach((item) => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.catalog li').forEach((item2) => {
+        item2.classList.remove('active')
+      })
+      item.classList.add('active')
+    })
+  })
+}
 
 // contact form 7 success popup
 if(window.location.hash.match('#wpcf7') != null){

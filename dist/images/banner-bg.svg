@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="316px" viewBox="0 0 1920 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>背景</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1920" height="316"></rect>
+        <linearGradient x1="-25.7062592%" y1="-14.5274022%" x2="137.025067%" y2="117.771853%" id="linearGradient-3">
+            <stop stop-color="#44CAE0" offset="0%"></stop>
+            <stop stop-color="#68FF87" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="11.1396679%" y1="32.83873%" x2="116.101997%" y2="90.14972%" id="linearGradient-4">
+            <stop stop-color="#4DCCFF" offset="0%"></stop>
+            <stop stop-color="#4489FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M-173,438 C-173.507492,438 -173.970836,437.810982 -174.323472,437.499506 C-258.075898,430.984449 -324,361.167236 -324,276 C-324,192.583025 -260.757651,123.891643 -179.464905,114.978754 C-153.789846,27.7093203 -73.0849777,-36 22.5,-36 C122.984749,-36 207.024754,34.4083217 227.977094,128.582045 C284.040369,154.126833 323,210.527661 323,276 C323,365.470129 250.246272,438 160.5,438 C159.448936,438 158.400202,437.990052 157.353889,437.970245 C157.239746,437.989232 157.12113,438 157,438 L-173,438 Z" id="path-5"></path>
+        <filter x="-15.5%" y="-21.2%" width="131.1%" height="142.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="100" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="-25.7062592%" y1="17.4460411%" x2="137.025067%" y2="84.1907783%" id="linearGradient-7">
+            <stop stop-color="#44CAE0" offset="0%"></stop>
+            <stop stop-color="#68FF87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="重构-安装成功" transform="translate(0.000000, -70.000000)">
+            <g id="footer-2备份" transform="translate(0.000000, 70.000000)">
+                <g id="footer">
+                    <g id="编组-19">
+                        <g id="背景">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="矩形" fill="#F2F7FA" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <rect id="矩形" fill="url(#linearGradient-3)" opacity="0.200000003" mask="url(#mask-2)" x="1604" y="130" width="30" height="30" rx="15"></rect>
+                            <rect id="矩形备份-10" fill="url(#linearGradient-3)" opacity="0.200000003" mask="url(#mask-2)" x="1686" y="93" width="15" height="15" rx="7.5"></rect>
+                            <g id="形状结合" opacity="0.200000003" mask="url(#mask-2)">
+                                <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            </g>
+                            <path d="M1093.2,74 C1092.77574,74 1092.40291,73.7798348 1092.18952,73.4475254 C1052.63424,68.9747562 1022,37.7965703 1022,0 C1022,-36.9485369 1051.27499,-67.572348 1089.53994,-73.1077642 C1099.95218,-117.697788 1141.2009,-151 1190.5,-151 C1241.97052,-151 1284.66587,-114.699532 1292.65712,-67.1506957 C1320.02347,-55.3961327 1339,-29.7479614 1339,0 C1339,34.8128377 1313.0115,64.0109818 1278.00141,71.9000472 L1278,72.8 C1278,73.4627417 1277.46274,74 1276.8,74 L1093.2,74 Z" id="形状结合备份-10" fill="#FFFFFF" opacity="0.100000001" mask="url(#mask-2)"></path>
+                            <path d="M1879.2,91 C1878.95103,91 1878.71976,90.924177 1878.52804,90.7943627 C1865.25622,89.217684 1855,78.7178551 1855,66 C1855,53.4818675 1864.93662,43.1126439 1877.90504,41.2856734 C1881.50127,26.2245399 1895.40127,15 1912,15 C1929.3614,15 1943.77036,27.2797091 1946.52512,43.3859798 C1955.67189,47.3889005 1962,56.0101862 1962,66 C1962,77.9541968 1952.93849,87.9487382 1940.82853,90.4159903 C1940.61984,90.7661672 1940.23723,91 1939.8,91 L1879.2,91 Z" id="形状结合备份-7" fill="url(#linearGradient-7)" opacity="0.5" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
