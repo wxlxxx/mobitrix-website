@@ -30,6 +30,15 @@ body {
     color: inherit;
   }
 }
+.link-underline {
+  a {
+    color: inherit;
+    text-decoration: underline;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
 .form-control:focus {
   border-color: inherit;
   box-shadow: none;
@@ -218,19 +227,14 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        background: url('data:image/svg+xml,<svg class="bi bi-arrow-right-short" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"></path><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"></path></svg>') center no-repeat;
+        background: url('../../public/images/icon-right2.svg') center no-repeat;
         width: 1.5rem;
         height: 1.5rem;
-        opacity: 0.25;
       }
       &:hover {
         a {
           color: $primary;
           text-decoration: none;
-        }
-        &::before {
-          background: url('data:image/svg+xml,<svg class="bi bi-arrow-right-short" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="rgba(0,121,255,1)" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"></path><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"></path></svg>') center no-repeat;
-          opacity: 1;
         }
       }
     }
@@ -376,6 +380,40 @@ article {
     .nav-prev-text,
     .nav-next-text {
       display: none;
+    }
+  }
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media(min-width: 992px){
+    flex-direction: row;
+  }
+  label {
+    margin: 1rem;
+    width: 100%;
+    max-width: 750px;
+  }
+  .search-field {
+    background-color: #fff;
+    border-radius:6px;
+    border:2px solid rgba(201,213,220,1);
+    padding: 1rem;
+    width: 100%;
+  }
+  .search-submit {
+    background-color: $primary;
+    color: #fff;
+    padding: 0.6rem 2rem;
+    font-size: 24px;
+    border: none;
+    border-radius:6px;
+    &:hover {
+      background-color: #007df1;
+      box-shadow:0px 2px 10px 0px rgba(0,0,0,0.1);
     }
   }
 }
