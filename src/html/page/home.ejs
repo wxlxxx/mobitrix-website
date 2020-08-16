@@ -6,6 +6,7 @@
     <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/favicon.ico" type="image/png">
     <title>Mobitrix</title>
+    <script src="/assets/pace.min.js"></script>
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
@@ -65,7 +66,49 @@
           </div>
         </div>
       </section>
-
+      <section>
+        <div class="py-5 text-center">
+          <div class="container-md py-lg-4">
+            <h2 class="mb-3">Where Have We Been Mentioned</h2>
+            <p class="mb-5">Mobitrix is trusted by the world’s leading media sites.</p>
+            <div class="row no-gutters">
+              <div class="col-lg-4 py-4">
+                <div class="box-shadow rounded-left overflow-hidden h-100">
+                  <div class="p-4" style="background-color: #da1e2c;">
+                    <img style="height: 50px;" src="<%= process.env.IMAGE_PATH %>/logo-tech.png" alt="">
+                  </div>
+                  <div class="p-4 text-lg-left d-flex justify-content-between flex-column h-75">
+                    <p class="small">Mobitrix has earned the trust from millions of users all over the world. You can safely use Mobitrix software when you need to transfer WhatsApp messages or process your device data.</p>
+                    <p class="small text-muted">Jan 15, 2020 www.techadvisor.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-shadow rounded overflow-hidden h-100">
+                  <div class="p-4" style="background-color: #0189d2;">
+                    <img style="height: 50px;" src="<%= process.env.IMAGE_PATH %>/logo-softonic.png" alt="">
+                  </div>
+                  <div class="p-4 text-lg-left d-flex justify-content-between flex-column h-75">
+                    <p class="small">A practical and cost-effective application for any users who need to backup and restore WhatsApp chat history without uninstalling.</p>
+                    <p class="small text-muted">Mar 18, 2020 www.softonic.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 py-4">
+                <div class="box-shadow rounded-right overflow-hidden h-100">
+                  <div class="p-4" style="background-color: #002575;">
+                    <img style="height: 50px;" src="<%= process.env.IMAGE_PATH %>/logo-softpedia.png" alt="">
+                  </div>
+                  <div class="p-4 text-lg-left d-flex justify-content-between flex-column h-75">
+                    <p class="small">With exclusive technology and low price, Mobitrix WhatsApp Transfer aims to become the most cost-effective tool for WhatsApp transfer.</p>
+                    <p class="small text-muted">Apr 21, 2020 www.softpedia.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="news-and-tips">
         <div class="py-5 bg-gray">
           <div class="container py-lg-4">

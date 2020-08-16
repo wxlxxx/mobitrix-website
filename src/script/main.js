@@ -17,6 +17,7 @@ document.querySelectorAll('[data-toggle="collapse"], [data-toggle="dropdown"]').
   }
   item.addEventListener('click', item._collapseHandle)
 })
+// fixed navbar
 if(document.querySelectorAll('#fixed-navbar').length > 0){
   window.addEventListener('scroll', function(){
     if(window.scrollY >= 200){
@@ -26,6 +27,7 @@ if(document.querySelectorAll('#fixed-navbar').length > 0){
     }
   })
 }
+// article catalog
 if(document.querySelectorAll('.catalog').length > 0){
   document.querySelectorAll('.catalog li').forEach((item) => {
     item.addEventListener('click', () => {
@@ -36,6 +38,63 @@ if(document.querySelectorAll('.catalog').length > 0){
     })
   })
 }
+// userClient
+const userClient = {
+  agent: navigator.userAgent.toLowerCase(),
+  platform: navigator.platform.match(/mac/i) ? 'mac' : (navigator.platform.match(/win/i) ? 'win' : (navigator.platform.match(/ip/i) ? 'ios' : (navigator.platform.match(/android/i) || navigator.platform.match(/linux/i) ? 'android' : 'other'))),
+  device: null
+}
+if(userClient.platform === 'ios' || userClient.platform === 'android'){
+  userClient.device = 'mobile'
+}else {
+  userClient.device = 'desktop'
+}
+document.body.setAttribute('data-dev', userClient.device)
+document.body.setAttribute('data-sys', userClient.platform)
+window.userClient = userClient
+
+const platformToggles = document.querySelectorAll('[data-toggle="platform"]')
+platformToggles.forEach(item => {
+  item.addEventListener('click', () => {
+    document.body.setAttribute('data-sys', item.getAttribute('data-target'))
+  })
+})
+
+// href
+document.querySelectorAll('a[href^="#"]').forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault()
+    let target = e.target.getAttribute('href')
+    let sTop = document.querySelectorAll(target)[0].offsetTop
+    let curr_sTop = document.documentElement.scrollTop || document.body.scrollTop
+    let scrollToTarget = null
+    console.log(curr_sTop);
+    console.log(sTop);
+    console.log('start');
+    if (curr_sTop < sTop) {
+      scrollToTarget = () => {
+        curr_sTop = (document.documentElement.scrollTop || document.body.scrollTop) + 10
+        console.log(curr_sTop);
+        if (curr_sTop < sTop) {
+          window.requestAnimationFrame(scrollToTarget)
+          window.scrollTo(0, curr_sTop + curr_sTop / 8)
+        }
+      }
+    }
+    if (curr_sTop > sTop) {
+      scrollToTarget = () => {
+        curr_sTop = document.documentElement.scrollTop || document.body.scrollTop
+        console.log(curr_sTop);
+        if (curr_sTop > sTop) {
+          window.requestAnimationFrame(scrollToTarget)
+          window.scrollTo(0, curr_sTop - curr_sTop / 8)
+        }
+      }
+    }
+    scrollToTarget()
+  })
+});
+
 
 // contact form 7 success popup
 if(window.location.hash.match('#wpcf7') != null){
@@ -50,7 +109,7 @@ if(document.querySelectorAll('[data-page="product"]').length > 0){
   import(/* webpackChunkName: "product" */ './ProductPage')
 }
 
-// product
+// ad
 if(document.querySelectorAll('[data-page="ad"]').length > 0){
   import(/* webpackChunkName: "ad" */ './Ad')
 }
