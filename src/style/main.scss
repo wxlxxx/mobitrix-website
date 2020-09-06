@@ -20,6 +20,13 @@
 @import "~bootstrap/scss/pagination";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/utilities";
+@import "~balloon-css/src/balloon";
+@import "~cookies-eu-banner/css/cookies-eu-banner.default.css";
+
+[aria-label][data-balloon-pos]:after {
+  white-space: pre-wrap;
+  width: 240px;
+}
 
 // global
 [data-dev="mobile"] {
@@ -225,6 +232,9 @@ ul.list-faqs {
 .btn-purchase {
   background: linear-gradient(to right, #44E0D7, #68FF9F);
   color: $white;
+}
+.flex-1 {
+  flex: 1;
 }
 // header
 header {

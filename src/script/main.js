@@ -1,5 +1,10 @@
 import '../style/main.scss'
 import Swal from 'sweetalert2'
+import CookiesEuBanner from "cookies-eu-banner"
+
+const cookiesEuBanner = new CookiesEuBanner(function () {
+    console.log('accept Cookies Policy');
+}, true)
 
 // header
 document.querySelectorAll('[data-toggle="collapse"], [data-toggle="dropdown"]').forEach((item, i) => {
@@ -70,24 +75,24 @@ document.querySelectorAll('a[href^="#"]').forEach((item) => {
     let scrollToTarget = null
     console.log(curr_sTop);
     console.log(sTop);
-    console.log('start');
+    // console.log('start');
     if (curr_sTop < sTop) {
       scrollToTarget = () => {
         curr_sTop = (document.documentElement.scrollTop || document.body.scrollTop) + 10
-        console.log(curr_sTop);
-        if (curr_sTop < sTop) {
+        // console.log(curr_sTop);
+        if (curr_sTop < (sTop - 100)) {
           window.requestAnimationFrame(scrollToTarget)
-          window.scrollTo(0, curr_sTop + curr_sTop / 8)
+          window.scrollTo(0, curr_sTop + 50)
         }
       }
     }
     if (curr_sTop > sTop) {
       scrollToTarget = () => {
         curr_sTop = document.documentElement.scrollTop || document.body.scrollTop
-        console.log(curr_sTop);
-        if (curr_sTop > sTop) {
+        // console.log(curr_sTop);
+        if (curr_sTop > (sTop - 100)) {
           window.requestAnimationFrame(scrollToTarget)
-          window.scrollTo(0, curr_sTop - curr_sTop / 8)
+          window.scrollTo(0, curr_sTop - 50)
         }
       }
     }
