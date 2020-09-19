@@ -1,6 +1,11 @@
 import '../style/main.scss'
 import Swal from 'sweetalert2'
 import CookiesEuBanner from "cookies-eu-banner"
+import lozad from 'lozad'
+
+
+const observer = lozad('.lozad')
+observer.observe()
 
 const cookiesEuBanner = new CookiesEuBanner(function () {
     console.log('accept Cookies Policy');
