@@ -2,6 +2,13 @@ import '../style/main.scss'
 import Swal from 'sweetalert2'
 import CookiesEuBanner from "cookies-eu-banner"
 import lozad from 'lozad'
+import WebFont from 'webfontloader'
+
+WebFont.load({
+  google: {
+    families: ['Muli:n3,n4,n5,n7&display=swap']
+  }
+})
 
 
 const observer = lozad('.lozad')

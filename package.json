@@ -46,6 +46,7 @@
     "lozad": "^1.16.0",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^9.15.1",
-    "throttle-debounce": "^2.1.0"
+    "throttle-debounce": "^2.1.0",
+    "webfontloader": "^1.6.28"
   }
 }

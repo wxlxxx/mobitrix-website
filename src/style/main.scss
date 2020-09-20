@@ -23,6 +23,10 @@
 @import "~balloon-css/src/balloon";
 @import "~cookies-eu-banner/css/cookies-eu-banner.default.css";
 
+.wf-active body {
+  font-family: 'Muli';
+}
+
 [aria-label][data-balloon-pos]:after {
   white-space: pre-wrap;
   width: 240px;
@@ -66,9 +70,6 @@
   .sys.ios {
     display: none;
   }
-}
-body {
-  font-family: 'Muli', sans-serif;
 }
 .link-inherit {
   a {
