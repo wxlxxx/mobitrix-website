@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Mobitrix</title>
-  </head>
-  <body>
-    <%= require('html-loader!../common/header.ejs') %>
-    <main>
-      <section>
-        <div class="py-5 text-center" style="background:url(<%= process.env.IMAGE_PATH %>/banner-bg-2.svg) center no-repeat;">
-          <div class="container py-lg-4">
-            <h1>Frequently Asked Questions</h1>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mobitrix</title>
+</head>
+<body>
+  <%= require('html-loader!../common/header.ejs') %>
+  <main>
+    <section>
+      <div class="py-5 text-center" style="background:url(<%= process.env.IMAGE_PATH %>/banner-bg-2.svg) center no-repeat;">
+        <div class="container py-lg-4">
+          <h1>Frequently Asked Questions</h1>
         </div>
-      </section>
-      <section>
-        <div class="py-5">
-          <div class="container">
-
-            <ul class="list-unstyled">
- 	<li>
-<details>
-<summary>1. Will my device data be affected after using your software? </summary>
-<p class="text-muted">No. All the data on your iPhone or Android phone will not be affected.</p>
-
-</details></li>
- 	<li>
-<details>
-<summary>2. How long will it take to transfer WhatsApp messages? </summary>
-<p class="text-muted">The transferring time depends on the data size of the WhatsApp data to be transferred. Generally, it can be several minutes or an hour.</p>
-
-</details></li>
- 	<li>
-<details>
-<summary>3. What’s the Differences between the trial and full version? </summary>
-<p class="text-muted">You can use the free trial version to back up WhatsApp messages. To transfer or restore WhatsApp, you will need to upgrade from trial version to full version.</p>
-
-</details></li>
- 	<li>
-<details>
-<summary>4. Is it possible to restore WhatsApp without uninstalling this application? </summary>
-<p class="text-muted">With Mobitrix WhatsApp Transfer, you can restore your WhatsApp messages without uninstalling, but the existing WhatsApp data on your device will be overwritten by the data in the backup.</p>
-
-</details></li>
- 	<li>
-<details>
-<summary>5. Is it secure to install the customized WhatsApp on my device? </summary>
-<p class="text-muted">Yes. We guarantee that it is 100% safe to install the customized WhatsApp. We will never keep or use your device data. Therefore, you don’t have to worry about the data security.</p>
-
-</details></li>
-</ul>
-          </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-5 d-flex flex-column flex-lg-row">
+        <div class="position-relative flex-1 px-3">
+          <ul class="list-unstyled rounded overflow-hidden" style="position: sticky;top: 60px;">
+            <li><a href="#" class="btn btn-lg btn-primary w-100 text-left rounded-0">Guide Catelog</a></li>
+            <li><a href="#" class="btn btn-lg btn-secondary w-100 text-left rounded-0">Android to iOS</a></li>
+            <li><a href="#" class="btn btn-lg btn-secondary w-100 text-left rounded-0">iOS to Android</a></li>
+            <li><a href="#" class="btn btn-lg btn-secondary w-100 text-left rounded-0">Backup Guide</a></li>
+            <li><a href="#" class="btn btn-lg btn-secondary w-100 text-left rounded-0">Restore Guide</a></li>
+            <li><a href="#" class="btn btn-lg btn-secondary w-100 text-left rounded-0">Common Errors</a></li>
+          </ul>
         </div>
-      </section>
-      <%= require('html-loader!../common/why-choice.ejs') %>
-    </main>
-    <%= require('html-loader!../common/footer.ejs') %>
-  </body>
+        <div class="container-md">
+          <ul class="list-unstyled">
+            <li>
+              <details>
+                <summary>1. Will my device data be affected after using your software? </summary>
+                <p class="text-muted">No. All the data on your iPhone or Android phone will not be affected.</p>
+
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>2. How long will it take to transfer WhatsApp messages? </summary>
+                <p class="text-muted">The transferring time depends on the data size of the WhatsApp data to be transferred. Generally, it can be several minutes or an hour.</p>
+
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>3. What’s the Differences between the trial and full version? </summary>
+                <p class="text-muted">You can use the free trial version to back up WhatsApp messages. To transfer or restore WhatsApp, you will need to upgrade from trial version to full version.</p>
+
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>4. Is it possible to restore WhatsApp without uninstalling this application? </summary>
+                <p class="text-muted">With Mobitrix WhatsApp Transfer, you can restore your WhatsApp messages without uninstalling, but the existing WhatsApp data on your device will be overwritten by the data in the backup.</p>
+
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>5. Is it secure to install the customized WhatsApp on my device? </summary>
+                <p class="text-muted">Yes. We guarantee that it is 100% safe to install the customized WhatsApp. We will never keep or use your device data. Therefore, you don’t have to worry about the data security.</p>
+
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1"></div>
+      </div>
+    </section>
+    <%= require('html-loader!../common/why-choice.ejs') %>
+  </main>
+  <%= require('html-loader!../common/footer.ejs') %>
+</body>
 </html>

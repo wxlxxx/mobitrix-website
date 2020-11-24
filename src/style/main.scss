@@ -233,6 +233,12 @@ ul.list-faqs {
 .btn-purchase {
   background: linear-gradient(to right, #44E0D7, #68FF9F);
   color: $white;
+  min-width: 200px;
+}
+.btn-secondary:hover {
+  background-color: #E6F2FB;
+  border-color: #E6F2FB;
+  color: $primary;
 }
 .flex-1 {
   flex: 1;
@@ -341,6 +347,10 @@ footer {
       color: $primary;
     }
   }
+}
+.paypal-button {
+  max-width: 200px;
+  margin: 1rem auto 0;
 }
 // article
 article {
