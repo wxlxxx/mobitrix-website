@@ -135,3 +135,18 @@ if(document.querySelectorAll('[data-page="ad"]').length > 0){
 if(document.querySelectorAll('[data-page="purchase"]').length > 0){
   import(/* webpackChunkName: "purchase" */ './PurchasePage')
 }
+
+// retrieve
+if(document.querySelectorAll('[data-page="retrieve"]').length > 0){
+  import(/* webpackChunkName: "retrieve" */ './RetrievePage')
+}
+
+// 动态title
+const normal_title = document.title
+document.addEventListener('visibilitychange', () => {
+  if(document.visibilityState=='hidden') {
+    document.title = 'Still here for you'
+  }else{
+    document.title = normal_title
+  }
+})

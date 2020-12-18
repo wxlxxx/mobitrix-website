@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 // }
 // Cookies.set('countdownEnd', end)
 
-const end = new Date("2020/11/30").getTime()
+const end = new Date("2020/12/20").getTime()
 function update(){
   const ts = countdown(end)
   document.querySelectorAll('#days')[0].innerText = ts.days < 10 ? '0'+ts.days : ts.days

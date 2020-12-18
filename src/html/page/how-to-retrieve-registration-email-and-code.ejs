@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.ico" type="image/png">
+    <title>Mobitrix</title>
+    <script src="/assets/pace.min.js"></script>
+</head>
+<body data-page="retrieve">
+	<%= require('html-loader!../common/header.ejs') %>
+	<main>
+		<section class="py-5">
+			<div class="container">
+				<h1 class="text-primary">How Do I Retrieve My Registration Code?</h1>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="bg-light py-5 px-lg-4">
+					<h4 class="text-muted mb-4">Enter the order number or the e-mail you used to place the order.</h4>
+					<form id="retrieve-form" class="d-flex align-items-center mb-5">
+						<input type="email" id="email" class="form-control form-control-lg mr-4" placeholder="order number or license e-mail" style="max-width: 500px;">
+						<button type="submit" id="submit" class="btn btn-lg btn-primary">Submit</button>
+					</form>
+					<div id="result" class="table-responsive"></div>
+					<h5 class="mb-3">Tips:</h5>
+					<ol class="mb-5">
+						<li>If you purchase the product from our agency, you may not retrieve the code as they don't share customer information with us.</li>
+						<li>If you purchase the product from App store, you don't need a code, just launch App store and go to Purchase tab to use it directly.</li><li>If you've placed the order successfully but it prompts "order does not exist" when you try to search, please allow 30~60 minutes until the order goes into effect in our database. If you don't receive the code after 2 hours, please contact our <a class="text-orange" href="https://support.tenorshare.com/#/">support team</a> for further assistance.</li>
+					</ol>
+					<h5 class="mb-3">Here you can retrieve your registration code if you run into the following situation:</h5>
+					<ul>
+						<li>Have not received your registration code after your purchase.</li>
+						<li>The code was lost during a computer crash or change.</li>
+						<li>You have upgraded your product, and need the new registration code.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<%= require('html-loader!../common/footer.ejs') %>
+</body>
+</html>
