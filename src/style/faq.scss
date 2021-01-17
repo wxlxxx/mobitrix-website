@@ -1,0 +1,106 @@
+@import "./variables";
+
+.tag-faq {
+  border-left: solid 5px $primary;
+  padding-left: 10px;
+}
+
+.faq-tabs {
+	background-image: url('./images/faq-bg.png');
+	background-size: cover;
+	background-position: top;
+	.row [class^="col-"]:not(:first-child) .faq-tab-item::before{
+		content: '';
+		position: absolute;
+		left: -1px;
+		top: 20%;
+		width: 0;
+		height: 60%;
+		border-left: dashed 1px #fff;
+	}
+	.faq-tab-item {
+		position: relative;
+		height: 100%;
+		padding: 20px;
+		cursor: pointer;
+		color: #fff;
+		svg {
+			margin-bottom: 10px;
+		}
+		&.active {
+			color: $primary;
+			border-radius: 8px;
+			background-color: #fff;
+			h5 {
+				color: #000;
+			}
+			p {
+				color: #777676;
+			}
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
+.faq-list {
+	li {
+		background: url('./icon/faq.svg') no-repeat;
+		background-size: 1rem;
+		background-position: 0 27px;
+	}
+	details {
+		border-bottom: dashed 1px #B0B0B0;
+		margin: 0;
+	}
+	summary {
+		padding: 18px 0 18px 24px;
+		&::before {
+			top: 14px;
+		}
+	}
+	details, summary {
+		background-color: inherit;
+	}
+}
+
+.support-user-guide-item {
+	background-color: #F7F9FC;
+	border-top: solid 4px $primary;
+	display: block;
+	padding: 28px 45px;
+	color: #000;
+	p {
+		margin: 0 0 0 20px;
+	}
+	svg {
+		color: $primary;
+	}
+	&:hover {
+		background-color: $primary;
+		color: #fff;
+		svg {
+			color: #fff;
+		}
+		text-decoration: none;
+		border-top: solid 4px #BADAFF;
+	}
+}
+
+.guide-sidebar-item {
+	padding: 15px 20px;
+	display: block;
+	color: #000;
+	border-left: solid 4px transparent;
+	&:hover {
+		border-left: solid 4px $primary;
+		text-decoration: none;
+		color: $primary;
+	}
+}
+.active .guide-sidebar-item {
+	border-left: solid 4px $primary;
+	text-decoration: none;
+	color: $primary;
+}

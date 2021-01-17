@@ -141,6 +141,11 @@ if(document.querySelectorAll('[data-page="retrieve"]').length > 0){
   import(/* webpackChunkName: "retrieve" */ './RetrievePage')
 }
 
+// faq
+if(document.querySelectorAll('[data-page="faq"]').length > 0){
+  import(/* webpackChunkName: "faq" */ './FaqPage')
+}
+
 // 动态title
 const normal_title = document.title
 document.addEventListener('visibilitychange', () => {

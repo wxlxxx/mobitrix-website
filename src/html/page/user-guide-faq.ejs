@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body data-page="faq">
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section class="pt-5">
+        <div class="container">
+          <h1 class="text-center">User Guide FAQs</h1>
+        </div>
+      </section>
+      <section>
+        <div class="py-5 d-flex flex-column flex-lg-row">
+          <div class="position-relative flex-1 px-3">
+            <ul class="list-unstyled overflow-hidden" style="position: sticky;top: 60px;border-radius: 2px;box-shadow: 0 0 15px 0 rgba(0,0,0,0.13);">
+              <li><a href="#" class="guide-sidebar-item border-0 h5 text-center text-white" style="background-image: linear-gradient(156deg, #2CCEFF 0%, #2282EF 100%);">Guide Catelog</a></li>
+              <li><a href="#" class="guide-sidebar-item">Android to iOS</a></li>
+              <li class="active"><a href="#" class="guide-sidebar-item">iOS to Android</a></li>
+              <li><a href="#" class="guide-sidebar-item">Backup Guide</a></li>
+              <li><a href="#" class="guide-sidebar-item">Restore Guide</a></li>
+              <li><a href="#" class="guide-sidebar-item">Common Errors</a></li>
+            </ul>
+          </div>
+          <div class="container-md">
+            <h4 class="tag-faq mb-4">Registration Code</h4>
+            <ul class="list-unstyled faq-list">
+              <li>
+                <details>
+                  <summary>1. Will my device data be affected after using your software? </summary>
+                  <p class="text-muted">No. All the data on your iPhone or Android phone will not be affected.</p>
+
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>2. How long will it take to transfer WhatsApp messages? </summary>
+                  <p class="text-muted">The transferring time depends on the data size of the WhatsApp data to be transferred. Generally, it can be several minutes or an hour.</p>
+
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>3. What’s the Differences between the trial and full version? </summary>
+                  <p class="text-muted">You can use the free trial version to back up WhatsApp messages. To transfer or restore WhatsApp, you will need to upgrade from trial version to full version.</p>
+
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>4. Is it possible to restore WhatsApp without uninstalling this application? </summary>
+                  <p class="text-muted">With Mobitrix WhatsApp Transfer, you can restore your WhatsApp messages without uninstalling, but the existing WhatsApp data on your device will be overwritten by the data in the backup.</p>
+
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>5. Is it secure to install the customized WhatsApp on my device? </summary>
+                  <p class="text-muted">Yes. We guarantee that it is 100% safe to install the customized WhatsApp. We will never keep or use your device data. Therefore, you don’t have to worry about the data security.</p>
+
+                </details>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
