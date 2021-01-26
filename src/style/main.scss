@@ -23,6 +23,11 @@
 @import "~balloon-css/src/balloon";
 @import "~cookies-eu-banner/css/cookies-eu-banner.default.css";
 
+body {
+  @media(min-width: 992px) {
+    padding-top: 60px;
+  }
+}
 .wf-active body {
   font-family: 'Muli';
 }
@@ -135,6 +140,9 @@ main {
     backdrop-filter: blur(5px);
   }
 }
+.text-tiny {
+  font-size: 12px;
+}
 details {
   margin-bottom: 1.5rem;
   background-color: #f2f7fa;
@@ -234,6 +242,7 @@ ul.list-faqs {
   background: linear-gradient(to right, #44E0D7, #68FF9F);
   color: $white;
   min-width: 200px;
+  border-radius: 2px;
 }
 .btn-secondary:hover {
   background-color: #E6F2FB;
@@ -246,6 +255,14 @@ ul.list-faqs {
 // header
 header {
   box-shadow:0px 2px 10px 0px rgba(0,0,0,0.1);
+  @media(min-width: 992px) {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 59;
+    background-color: #fff;
+  }
 }
 .navbar {
   .navbar-brand {
@@ -321,37 +338,6 @@ footer {
   }
 }
 
-// purchase
-#purchase-banner {
-  .list {
-    font-size: 14px;
-    @media(min-width: 992px){
-      display: flex;
-    }
-  }
-  .list li {
-    padding-left: 1.5rem;
-    background: url('../../public/images/icon-success.svg') left no-repeat;background-size: 1rem;
-    margin-right: 1rem;
-  }
-}
-#purchase-cart {
-  .countdown {
-    .box {
-      width: 72px;
-      margin: 0 1rem;
-    }
-    .num {
-      font-size: 24px;
-      background-color: #F2F7FA;
-      color: $primary;
-    }
-  }
-}
-.paypal-button {
-  max-width: 200px;
-  margin: 1rem auto 0;
-}
 // article
 article {
   img {

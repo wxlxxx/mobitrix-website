@@ -1,0 +1,59 @@
+@import "./variables";
+
+#purchase-banner {
+  .list {
+    font-size: 14px;
+    @media(min-width: 992px){
+      display: flex;
+    }
+  }
+  .list li {
+    padding-left: 1.5rem;
+    background: url('../../public/images/icon-success.svg') left no-repeat;background-size: 1rem;
+    margin-right: 1rem;
+  }
+}
+.list2 li {
+  padding-left: 1.5rem;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(24,144,255,1)" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>') left no-repeat;background-size: 1rem;
+  margin-right: 1rem;
+}
+#purchase-cart {
+  .countdown {
+    .box {
+      width: 72px;
+      margin: 0 1rem;
+    }
+    .num {
+      font-size: 24px;
+      background-color: #F2F7FA;
+      color: $primary;
+    }
+    &.countdown-new {
+      .box {
+        width: 32px;
+        margin: 0 0.5rem;
+      }
+      .num {
+        font-size: 20px;
+        border-radius: 3px;
+      }
+    }
+  }
+  .discount-label {
+    width: 204px;
+    height: 44px;
+    background: url('./icon/discount-label.svg') center no-repeat;
+    position: absolute;
+    left: 50%;
+    top: -14px;
+    transform: translateX(-102px);
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+.paypal-button {
+  max-width: 200px;
+  margin: 1rem auto 0;
+}

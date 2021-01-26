@@ -1,3 +1,4 @@
+import '../style/purchase.scss'
 import countdown from 'countdown'
 import Cookies from 'js-cookie'
 import Swal from 'sweetalert2'
