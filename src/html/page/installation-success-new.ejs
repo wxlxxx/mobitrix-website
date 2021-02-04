@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section>
+        <div class="py-5 text-center" style="background:url(<%= process.env.IMAGE_PATH %>/banner-bg.svg) center no-repeat;">
+          <div class="container">
+            <i><img src="<%= process.env.IMAGE_PATH %>/success.svg"/></i>
+            <h1>Installation Successful</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-5">
+          <div class="container">
+            <h2 class="text-center mb-5">How to Use Mobitrix for WhatsApp</h2>
+            <ul class="list-unstyled">
+              <li>
+                <details>
+                  <summary>1. What can I do with the free version of ReiBoot iOS?</summary>
+                  <p>You can use the free version for free without any registration code. The free version of ReiBoot iOS can help your device enter recovery mode with one click for free and exit recovery mode with one click for free within 5 times. Some simple system problems can be solved by exiting recovery mode. If your system problems are more complicated, you can upgrade to pro version to repair it.</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>1. What can I do with the free version of ReiBoot iOS?</summary>
+                  <p>You can use the free version for free without any registration code. The free version of ReiBoot iOS can help your device enter recovery mode with one click for free and exit recovery mode with one click for free within 5 times. Some simple system problems can be solved by exiting recovery mode. If your system problems are more complicated, you can upgrade to pro version to repair it.</p>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <%= require('html-loader!../common/why-choice.ejs') %>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>

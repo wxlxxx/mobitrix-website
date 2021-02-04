@@ -57,3 +57,10 @@
   max-width: 200px;
   margin: 1rem auto 0;
 }
+
+[data-hide-store] {
+  display: none;
+}
+[data-show-store] {
+  display: block !important;
+}
