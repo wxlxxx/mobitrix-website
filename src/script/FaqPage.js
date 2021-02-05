@@ -27,3 +27,8 @@ details.forEach((item, index) => {
 		}
 	})
 })
+
+if(window.location.hash){
+	const hash = window.location.hash
+	document.querySelector(hash).setAttribute('open', 'open')
+}
