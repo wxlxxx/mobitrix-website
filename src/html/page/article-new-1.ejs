@@ -7,7 +7,7 @@
   <link rel="icon" href="/favicon.ico" type="image/png">
   <title>Mobitrix</title>
 </head>
-<body>
+<body data-page="article">
   <%= require('html-loader!../common/header.ejs') %>
   <main>
     <section class="py-5 text-white text-center" style="background: url('<%= process.env.IMAGE_PATH %>/article-new-banner1.png') center no-repeat;">
@@ -50,99 +50,171 @@
         </div>
       </div>
     </section>
-    <article>
-      <div class="container-md">
-        <h2>How to Transfer WhatsApp Backup from Google Drive to iCloud</h2>
-        <p class="text-muted text-small">‘Is there a way one can move whatsapp back up from google drive to icloud? I used Samsung s8+ for several years and most important WhatsApp messages were backed up via Google drive. I have just recently purchased an iPhone 12 and have no idea to restore my whatsapp from Google drive onto iCloud. ’ – From discussions.apple.com</p>
-        <hr class="my-5">
-        <h3>Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</h3>
-        <p>It is currently not possible to transfer WhatsApp from Google drive to iCloud directly (But we have solutions to work it out).</p>
-        <p>Google Drive is one of the best ways to back up WhatsApp messages on Android devices. But Google Drive’s encryption protocols are vastly different from iCloud, making the transfer of WhatsApp data from Google Drive to iCloud directly impossible. But it is worth pointing out that there are third-party tools that can help you bridge this gap, allowing you to easily transfer WhatsApp data from the Google Drive backup to iCloud.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/09/google-drive-to-icloud.jpg">
-        </div>
-        <h3>How to Properly Do It</h3>
-        <p>The transfer of WhatsApp from Google Drive to iCloud can be accomplished in phases. The first phase involves restoring the backup to the Android device. In phase 2 we will use a special third-party tool to transfer the restored data to an iOS device before backing up the data to iCloud.</p>
-        <p>Here’s how to complete this process in more detail.</p>
-        <ul class="list-unstyled">
-          <li><a href="">1st Phase. Restore WhatsApp from Google Drive to Android First
-          <li><a href="">2nd Phase. Then Transfer WhatsApp from Android to iPhone</a></li>
-          <li><a href="">3rd Phase. Transfer iPhone to WhatsApp to iCloud</a></li>
-        </ul>
-        <h3>1st Phase. Restore WhatsApp from Google Drive to Android First</h3>
-        <p>The first thing to do when you want to move WhatsApp backup from Google Drive to iCloud is to restore WhatsApp from Google Drive to Android first. Here’s how to do it.</p>
-        <p><span class="text-primary">Step 1</span>: Begin by uninstalling WhatsApp on your Android device and then reinstall it.</p>
-        <p><span class="text-primary">Step 2</span>: Open WhatsApp on the device and then follow the on-screen prompts to set up WhatsApp and confirm the phone number. It is important that you use the same phone number that you used to create the backup.</p>
-        <p><span class="text-primary">Step 3</span>: Click on “Restore” when prompted in the next window to restore the backup.</p>
-        <p><span class="text-primary">Step 4</span>: When the restoring process is complete, tap “Next” to continue setting up WhatsApp.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/restore-whatsapp-data-google-drive.jpg">
-        </div>
-        <p><strong>Requirements before Restoring from Google Drive: </strong></p>
-        <p>There are some requirements that you should know before restoring from Google drive.</p>
-        <ul>
-          <li><span class="text-primary">Sufficient storage</span>: Google drive enables you to keep lots of data. The restoring prcess may end up if there is no enough storage on Google drive.</li>
-          <li><span class="text-primary">An activated phone</span>: You need to activate your phone with your own email addres and password.</li>
-        </ul>
-        <h3>2nd Phase. Then Transfer WhatsApp from Android to iPhone</h3>
-        <p>The next step in our process is to transfer the restored WhatsApp data to the iPhone. For this we need a specialized tool that can move WhatsApp data between devices even if the devices run on different platforms. The best tool for this purpose is <span class="text-primary">Mobitrix WhatsApp Transfer</span>. Its main advantage is to transfer all WhatsApp data between Android and iPhone.</p>
-        <div class="py-4 text-center text-uppercase">
-          <a class="btn btn-primary" href="https://download.mobitrix.com/products/mobitrix_whatsapp_installer.exe?_ga=2.72190227.1204937310.1612870803-1656836934.1604502426">
-            free download
-            <svg width="35" height="35" class="align-bottom mr-2" viewBox="0 0 24 24" fill="currentColor"><use xlink:href="#win-path"></use></svg>
-          </a>
-          <a class="btn btn-outline-primary" href="https://download.mobitrix.com/products/mobitrix-whatsapp-transfer.dmg">
-            free download
-            <svg width="35" height="35" class="align-bottom mr-2"><use xlink:href="#mac-path"></use></svg>
+    <div class="d-flex flex-column flex-lg-row mx-auto" style="max-width: 1920px;">
+      <div class="position-relative flex-1 px-3">
+        <div style="position: sticky;top: 60px;">
+          <ul class="list-unstyled overflow-hidden" id="article-sidebar">
+            <li><a href="#a1" class="btn btn-primary border-bottom w-100 text-left rounded-0">[100% Working] How to Transfer WhatsApp Backup from Google Drive to iCloud</a></li>
+            <li><a href="#a2" class="btn btn-light border-bottom w-100 text-left rounded-0">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+            <li><a href="#a3" class="btn btn-light border-bottom w-100 text-left rounded-0">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+            <li><a href="#a4" class="btn btn-light border-bottom w-100 text-left rounded-0">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+            <li><a href="#a5" class="btn btn-light border-bottom w-100 text-left rounded-0">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+          </ul>
+          <a href="" class="btn-group hover-unstyled" id="article-download-btn" role="group">
+            <button type="button" class="btn btn-primary text-left font-weight-bold">Transfer WhatsApp Now</button>
+            <button type="button" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+            </button>
           </a>
         </div>
-        <p>Follow these simple steps to use Mobitrix to transfer WhatsApp from Android to iPhone.</p>
-        <div class="mb-4 text-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/NutSM3kCLPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-        </div>
-        <p><span class="text-primary">Step 1</span>: Download and install Mobitrix WhatsApp Transfer to your computer.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/connect-the-2-device-to-pc.jpg">
-        </div>
-        <p><span class="text-primary">Step 2</span>:  Connect both the Android device and the iPhone to the computer using USB cables and wait for the program to detect the devices.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/device-connected.jpg">
-        </div>
-        <p><span class="text-primary">Step 3</span>:  When you are certain the devices are connected and in the right order, click on “Transfer” to begin the transfer process.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/start-to-transfer-whatsapp.jpg">
-        </div>
-        <p>Keep the devices connected to the computer until the transfer process is complete. All WhatsApp messages will be available on the iPhone once the transfer process is complete.</p>
-        <p>The following are some of the other features that make this tool the most ideal WhatsApp data management tool:</p>
-        <ul>
-          <li><span class="text-primary">1 click to transfer WhatsApp: </span>&nbsp;It can be used to transfer WhatsApp between Android and iPhone devices easily and quickly. &nbsp;</li>
-          <li><span class="text-primary">All chats &amp; attachments can be transferred: </span>All WhatsApp chat history and the attachments can be transferred, including texts, images, videos, emojs, files, etc.</li>
-          <li><span class="text-primary">Backup WhatsApp for FREE:</span>&nbsp;You can also use it to Backup WhatsApp on both Android and iPhone to the computer. And there is <span><em>no storage limitation</em></span> to backup WhatsApp messages.</li>
-          <li><span class="text-primary">Your privacy is protected:</span> Any of your WhatsApp data or other information will be kept on your own computer and will not be released.</li>
-          <li>It supports all Android devices running all versions of the Android OS and also all iOS device and all versions of the iOS firmware.</li>
-        </ul>
-        <h3>3rd Phase. Transfer iPhone to WhatsApp to iCloud</h3>
-        <p>Now that all the WhatsApp messages are on your iPhone, you can very easily backup the messages to iCloud, thereby completing the process to transfer WhatsApp from Google Drive to iCloud. Here’s how to back up WhatsApp to iCloud on your iPhone.</p>
-        <p><span class="text-primary">Step 1</span>:  Ensure that the iPhone is connected to a Wi-Fi network and that it is also adequately charged. Open the Settings on your iPhone and tap on your name. Scroll down to locate “iCloud” and tap on it.</p>
-        <p><span class="text-primary">Step 2</span>:  Tap on “iCloud Drive” to turn it “On”.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/turn-on-icloud-drive.jpg">
-        </div>
-        <p><span class="text-primary">Step 3</span>:  Sign in to your iCloud account if you aren’t already signed in.</p>
-        <p><span class="text-primary">Step 4</span>:  Go back to Settings > iCloud and the turn on “Back up iCloud” section. Select “Back up now” and the device will begin to backup all the data on your device including WhatsApp backup.</p>
-        <div class="text-center">
-          <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/backup-iphone.jpg">
-        </div>
-        <p>Once the backup process is complete, all the data that was essentially in your Google Drive account will be available in your iCloud account. You can then restore the backup to the iPhone if you need to. </p>
-        <p><strong>Related Posts</strong></p>
-        <ul>
-          <li><a href="https://www.mobitrix.com/whatsapp/restore-whatsapp-backup-from-google-drive-to-iphone/" rel="bookmark">(100% Working) 2 Ways to Restore WhatsApp from Google Drive to iPhone</a></li>
-          <li><a href="https://www.mobitrix.com/whatsapp/restore-whatsapp-from-icloud-to-android/" rel="bookmark">[100% Working] How to Restore WhatsApp Backup from iCloud to Android</a></li>
-          <li><a href="https://www.mobitrix.com/whatsapp/transfer-whatsapp-from-iphone-to-android/" rel="bookmark">[100% Working] How to Transfer WhatsApp from iPhone to Android</a></li>
-          <li><a href="https://www.mobitrix.com/whatsapp/move-whatsapp-icloud-backup-to-google-drive/" rel="bookmark">How to Move WhatsApp Backup from iCloud to Google Drive in 2021</a></li>
-        </ul>
       </div>
-    </article>
+      <article>
+        <div class="container-md">
+          <h2 id="a1">How to Transfer WhatsApp Backup from Google Drive to iCloud</h2>
+          <p class="text-muted text-small">‘Is there a way one can move whatsapp back up from google drive to icloud? I used Samsung s8+ for several years and most important WhatsApp messages were backed up via Google drive. I have just recently purchased an iPhone 12 and have no idea to restore my whatsapp from Google drive onto iCloud. ’ – From discussions.apple.com</p>
+          <hr class="my-5">
+          <h3>Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</h3>
+          <p>It is currently not possible to transfer WhatsApp from Google drive to iCloud directly (But we have solutions to work it out).</p>
+          <p>Google Drive is one of the best ways to back up WhatsApp messages on Android devices. But Google Drive’s encryption protocols are vastly different from iCloud, making the transfer of WhatsApp data from Google Drive to iCloud directly impossible. But it is worth pointing out that there are third-party tools that can help you bridge this gap, allowing you to easily transfer WhatsApp data from the Google Drive backup to iCloud.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/09/google-drive-to-icloud.jpg">
+          </div>
+          <h3>How to Properly Do It</h3>
+          <p>The transfer of WhatsApp from Google Drive to iCloud can be accomplished in phases. The first phase involves restoring the backup to the Android device. In phase 2 we will use a special third-party tool to transfer the restored data to an iOS device before backing up the data to iCloud.</p>
+          <p>Here’s how to complete this process in more detail.</p>
+          <ul class="list-unstyled">
+            <li><a href="">1st Phase. Restore WhatsApp from Google Drive to Android First
+            <li><a href="">2nd Phase. Then Transfer WhatsApp from Android to iPhone</a></li>
+            <li><a href="">3rd Phase. Transfer iPhone to WhatsApp to iCloud</a></li>
+          </ul>
+          <h3>1st Phase. Restore WhatsApp from Google Drive to Android First</h3>
+          <p>The first thing to do when you want to move WhatsApp backup from Google Drive to iCloud is to restore WhatsApp from Google Drive to Android first. Here’s how to do it.</p>
+          <p><span class="text-primary">Step 1</span>: Begin by uninstalling WhatsApp on your Android device and then reinstall it.</p>
+          <p><span class="text-primary">Step 2</span>: Open WhatsApp on the device and then follow the on-screen prompts to set up WhatsApp and confirm the phone number. It is important that you use the same phone number that you used to create the backup.</p>
+          <p><span class="text-primary">Step 3</span>: Click on “Restore” when prompted in the next window to restore the backup.</p>
+          <p><span class="text-primary">Step 4</span>: When the restoring process is complete, tap “Next” to continue setting up WhatsApp.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/restore-whatsapp-data-google-drive.jpg">
+          </div>
+          <p><strong>Requirements before Restoring from Google Drive: </strong></p>
+          <p>There are some requirements that you should know before restoring from Google drive.</p>
+          <ul>
+            <li><span class="text-primary">Sufficient storage</span>: Google drive enables you to keep lots of data. The restoring prcess may end up if there is no enough storage on Google drive.</li>
+            <li><span class="text-primary">An activated phone</span>: You need to activate your phone with your own email addres and password.</li>
+          </ul>
+          <h3 id="a2">2nd Phase. Then Transfer WhatsApp from Android to iPhone</h3>
+          <p>The next step in our process is to transfer the restored WhatsApp data to the iPhone. For this we need a specialized tool that can move WhatsApp data between devices even if the devices run on different platforms. The best tool for this purpose is <span class="text-primary">Mobitrix WhatsApp Transfer</span>. Its main advantage is to transfer all WhatsApp data between Android and iPhone.</p>
+          <div class="py-4 text-center text-uppercase">
+            <a class="btn btn-primary" href="https://download.mobitrix.com/products/mobitrix_whatsapp_installer.exe?_ga=2.72190227.1204937310.1612870803-1656836934.1604502426">
+              free download
+              <svg width="35" height="35" class="align-bottom mr-2" viewBox="0 0 24 24" fill="currentColor"><use xlink:href="#win-path"></use></svg>
+            </a>
+            <a class="btn btn-outline-primary" href="https://download.mobitrix.com/products/mobitrix-whatsapp-transfer.dmg">
+              free download
+              <svg width="35" height="35" class="align-bottom mr-2"><use xlink:href="#mac-path"></use></svg>
+            </a>
+          </div>
+          <p>Follow these simple steps to use Mobitrix to transfer WhatsApp from Android to iPhone.</p>
+          <div class="mb-4 text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NutSM3kCLPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+          <p><span class="text-primary">Step 1</span>: Download and install Mobitrix WhatsApp Transfer to your computer.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/connect-the-2-device-to-pc.jpg">
+          </div>
+          <p><span class="text-primary">Step 2</span>:  Connect both the Android device and the iPhone to the computer using USB cables and wait for the program to detect the devices.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/device-connected.jpg">
+          </div>
+          <p><span class="text-primary">Step 3</span>:  When you are certain the devices are connected and in the right order, click on “Transfer” to begin the transfer process.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/start-to-transfer-whatsapp.jpg">
+          </div>
+          <p>Keep the devices connected to the computer until the transfer process is complete. All WhatsApp messages will be available on the iPhone once the transfer process is complete.</p>
+          <p>The following are some of the other features that make this tool the most ideal WhatsApp data management tool:</p>
+          <ul>
+            <li><span class="text-primary">1 click to transfer WhatsApp: </span>&nbsp;It can be used to transfer WhatsApp between Android and iPhone devices easily and quickly. &nbsp;</li>
+            <li><span class="text-primary">All chats &amp; attachments can be transferred: </span>All WhatsApp chat history and the attachments can be transferred, including texts, images, videos, emojs, files, etc.</li>
+            <li><span class="text-primary">Backup WhatsApp for FREE:</span>&nbsp;You can also use it to Backup WhatsApp on both Android and iPhone to the computer. And there is <span><em>no storage limitation</em></span> to backup WhatsApp messages.</li>
+            <li><span class="text-primary">Your privacy is protected:</span> Any of your WhatsApp data or other information will be kept on your own computer and will not be released.</li>
+            <li>It supports all Android devices running all versions of the Android OS and also all iOS device and all versions of the iOS firmware.</li>
+          </ul>
+          <h3 id="a3">3rd Phase. Transfer iPhone to WhatsApp to iCloud</h3>
+          <p>Now that all the WhatsApp messages are on your iPhone, you can very easily backup the messages to iCloud, thereby completing the process to transfer WhatsApp from Google Drive to iCloud. Here’s how to back up WhatsApp to iCloud on your iPhone.</p>
+          <p><span class="text-primary">Step 1</span>:  Ensure that the iPhone is connected to a Wi-Fi network and that it is also adequately charged. Open the Settings on your iPhone and tap on your name. Scroll down to locate “iCloud” and tap on it.</p>
+          <p><span class="text-primary">Step 2</span>:  Tap on “iCloud Drive” to turn it “On”.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/turn-on-icloud-drive.jpg">
+          </div>
+          <p><span class="text-primary">Step 3</span>:  Sign in to your iCloud account if you aren’t already signed in.</p>
+          <p><span class="text-primary">Step 4</span>:  Go back to Settings > iCloud and the turn on “Back up iCloud” section. Select “Back up now” and the device will begin to backup all the data on your device including WhatsApp backup.</p>
+          <div class="text-center">
+            <img src="https://www.mobitrix.com/wp-content/uploads/2020/06/backup-iphone.jpg">
+          </div>
+          <p>Once the backup process is complete, all the data that was essentially in your Google Drive account will be available in your iCloud account. You can then restore the backup to the iPhone if you need to. </p>
+          <p><strong>Related Posts</strong></p>
+          <ul>
+            <li><a href="https://www.mobitrix.com/whatsapp/restore-whatsapp-backup-from-google-drive-to-iphone/" rel="bookmark">(100% Working) 2 Ways to Restore WhatsApp from Google Drive to iPhone</a></li>
+            <li><a href="https://www.mobitrix.com/whatsapp/restore-whatsapp-from-icloud-to-android/" rel="bookmark">[100% Working] How to Restore WhatsApp Backup from iCloud to Android</a></li>
+            <li><a href="https://www.mobitrix.com/whatsapp/transfer-whatsapp-from-iphone-to-android/" rel="bookmark">[100% Working] How to Transfer WhatsApp from iPhone to Android</a></li>
+            <li><a href="https://www.mobitrix.com/whatsapp/move-whatsapp-icloud-backup-to-google-drive/" rel="bookmark">How to Move WhatsApp Backup from iCloud to Google Drive in 2021</a></li>
+          </ul>
+        </div>
+      </article>
+      <div class="position-relative flex-1 px-3">
+        <div style="position: sticky;top: 60px;">
+          <h5 class="mb-4">Popular Posts</h5>
+          <!-- Slider main container -->
+          <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="list-unstyled overflow-hidden link-inherit">
+                  <li class="py-3 border-bottom"><a href="#a1" class="">[100% Working] How to Transfer WhatsApp Backup from Google Drive to iCloud</a></li>
+                  <li class="py-3 border-bottom"><a href="#a2" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+                  <li class="py-3"><a href="#a3" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="list-unstyled overflow-hidden link-inherit">
+                  <li class="py-3 border-bottom"><a href="#a1" class="">[100% Working] How to Transfer WhatsApp Backup from Google Drive to iCloud</a></li>
+                  <li class="py-3 border-bottom"><a href="#a2" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+                  <li class="py-3"><a href="#a3" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="list-unstyled overflow-hidden link-inherit">
+                  <li class="py-3 border-bottom"><a href="#a1" class="">[100% Working] How to Transfer WhatsApp Backup from Google Drive to iCloud</a></li>
+                  <li class="py-3 border-bottom"><a href="#a2" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+                  <li class="py-3"><a href="#a3" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+          <ul class="list-unstyled overflow-hidden link-inherit">
+            <li class="py-3 border-bottom"><a href="#a1" class="">[100% Working] How to Transfer WhatsApp Backup from Google Drive to iCloud</a></li>
+            <li class="py-3 border-bottom"><a href="#a2" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+            <li class="py-3"><a href="#a3" class="">Is it Possible to Transfer WhatsApp from Google Drive to iCloud Directly?</a></li>
+          </ul>
+          <form action="/search.html" class="mt-3">
+            <input type="hidden" name="cx" id="google_search_ex" value="008015268438809584453:gdut8lfe1ew">
+            <input type="hidden" name="cof" value="FORID:10">
+            <input type="hidden" name="ie" value="UTF-8">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <button type="submit" class="input-group-text btn btn-light" style="border-top-left-radius: 0;border-bottom-left-radius: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="py-5" style="background: url('<%= process.env.IMAGE_PATH %>/article-new-banner2.png') center no-repeat;background-size: cover;">
       <div class="container">
         <div class="row align-items-center no-gutters">
@@ -211,3 +283,5 @@
   <%= require('html-loader!../common/footer.ejs') %>
 </body>
 </html>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-605f40f5d1f5d9db"></script>

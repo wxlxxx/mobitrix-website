@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "IMAGE_PATH=/images webpack-dev-server --hot --mode=development",
-    "build": "PUBLIC_PATH=/wp-content/themes/twentytwenty-child/ IMAGE_PATH=/wp-content/uploads/2020/07 webpack --mode=production"
+    "build": "PUBLIC_PATH=https://160.153.255.102/ IMAGE_PATH=https://160.153.255.102/images webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -44,8 +44,10 @@
     "jquery": "^3.5.1",
     "js-cookie": "^2.2.1",
     "lozad": "^1.16.0",
+    "siblings": "^1.0.1",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^9.15.1",
+    "swiper": "^6.5.0",
     "throttle-debounce": "^2.1.0",
     "webfontloader": "^1.6.28"
   }

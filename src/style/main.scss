@@ -23,6 +23,13 @@
 @import "~balloon-css/src/balloon";
 @import "~cookies-eu-banner/css/cookies-eu-banner.default.css";
 
+html {
+  overflow-x: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
 body {
   @media(min-width: 992px) {
     padding-top: 60px;
@@ -79,6 +86,9 @@ body {
 .link-inherit {
   a {
     color: inherit;
+    &:hover {
+      color: $primary;
+    }
   }
 }
 .link-underline {
@@ -363,125 +373,6 @@ footer {
     @media(min-width: 992px) {
       transform: translateY(-20%);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-
-// article
-article {
-  img {
-    max-width: 100%;
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
-  h2 {
-    font-weight: normal;
-    font-size: 36px;
-    color: #413E3F;
-  }
-  h3 {
-    font-size: 28px;
-    color: #5D6769;
-  }
-  p {
-    font-size: 18px;
-    color: #5D6769;
-    line-height: 33px;
-  }
-  h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 1.5rem;
-  }
-  ul {
-    margin-bottom: 2.5rem;
-  }
-  li {
-    margin-bottom: 0.5rem;
-  }
-  .btn {
-    padding: 1rem 2rem;
-    font-size: 22px;
-    border-radius: 4px;
-    margin: 0.5rem 0;
-    box-shadow: 0 20px 21px 0 rgba(44,143,255,0.26);
-    @media (min-width: 992px){
-      margin: 0.5rem;
-    }
-  }
-  details {
-    padding-bottom: 0;
-    border-bottom: 0;
-    &[open] {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      summary::after {
-        transform: rotate(90deg);
-      }
-    }
-  }
-  summary {
-    padding: .5rem 1.5rem .5rem 1rem;
-    border-left: solid $primary 0.25rem;
-    background-color: $secondary;
-    &::before {
-      display: none;
-    }
-    &::after {
-      @media(min-width: 992px) {
-        content: '';
-        position: absolute;
-        top: .5rem;
-        right: 1rem;
-        background: url('data:image/svg+xml,<svg class="bi bi-caret-right-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="rgba(0,121,255,1)" xmlns="http://www.w3.org/2000/svg"><path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg>') center no-repeat;
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-    }
-  }
-  .catalog {
-    margin: 0;
-    li {
-      position: relative;
-      padding-left: 16px;
-      margin-bottom: 0;
-      padding-bottom: 1rem;
-      &:last-child {
-        padding-bottom: 0;
-        &::after {
-          display: none;
-        }
-      }
-      &.active {
-        color: $primary;
-      }
-      &.active::before {
-        background-color: $primary;
-        border: solid 1px $primary;
-      }
-      &.active::after {
-        border-left: dashed 1px $primary;
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        width: 9px;
-        height: 9px;
-        display: block;
-        border: solid 1px $dark;
-        border-radius: 100px;
-        left: 0;
-        top: 5px;
-        background-color: #fff;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 100%;
-        display: block;
-        border-left: dashed 1px $dark;
-        left: 4px;
-        top: 13px;
-      }
     }
   }
 }

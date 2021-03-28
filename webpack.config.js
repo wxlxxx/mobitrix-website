@@ -41,7 +41,7 @@ const devConfig = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /(\.s[ac]ss$)|(\.css$)/i,
         use: [
           // Creates `style` nodes from JS strings
           'style-loader',
@@ -94,7 +94,7 @@ const prodConfig = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /(\.s[ac]ss$)|(\.css$)/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -161,7 +161,8 @@ const prodConfig = {
   ].concat(htmlPlugins),
   optimization: {
     splitChunks: {
-      chunks: 'async'
+      chunks: 'initial',
+      automaticNameDelimiter: '-'
     }
   }
 }

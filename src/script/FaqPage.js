@@ -10,7 +10,9 @@ faqTabsItems.forEach(item => {
 		document.querySelectorAll('.tab-contents .tab-content').forEach(ele => {
 			ele.classList.add('d-none')
 		})
-		document.querySelector(item.getAttribute('data-target')).classList.remove('d-none')
+		if(item.getAttribute('data-target')){
+			document.querySelector(item.getAttribute('data-target')).classList.remove('d-none')
+		}
 	})
 })
 

@@ -11,7 +11,7 @@ WebFont.load({
 })
 
 
-const observer = lozad('.lozad')
+const observer = lozad('.lozad, .lazy')
 observer.observe()
 
 const cookiesEuBanner = new CookiesEuBanner(function () {
@@ -77,48 +77,31 @@ platformToggles.forEach(item => {
   })
 })
 
-// href
-document.querySelectorAll('a[href^="#"]').forEach((item) => {
-  item.addEventListener('click', (e) => {
+
+// contact form
+if(document.querySelectorAll('#form-contact').length > 0){
+  document.querySelectorAll('#form-contact')[0].addEventListener('submit', (e) => {
     e.preventDefault()
-    let target = e.target.getAttribute('href')
-    let sTop = document.querySelectorAll(target)[0].offsetTop
-    let curr_sTop = document.documentElement.scrollTop || document.body.scrollTop
-    let scrollToTarget = null
-    console.log(curr_sTop);
-    console.log(sTop);
-    // console.log('start');
-    if (curr_sTop < sTop) {
-      scrollToTarget = () => {
-        curr_sTop = (document.documentElement.scrollTop || document.body.scrollTop) + 10
-        // console.log(curr_sTop);
-        if (curr_sTop < (sTop - 100)) {
-          window.requestAnimationFrame(scrollToTarget)
-          window.scrollTo(0, curr_sTop + 50)
-        }
+    let formData = new FormData(e.target)
+    fetch('http://151.106.32.116:8081/contactus', {
+      body: formData,
+      method: 'post'
+    })
+    .then(response => response.json())
+    .then(responseJSON => {
+      if(responseJSON.code == 0){
+        Swal.fire({
+          text: 'Submitted successfully！'
+        })
+        e.target.reset()
       }
-    }
-    if (curr_sTop > sTop) {
-      scrollToTarget = () => {
-        curr_sTop = document.documentElement.scrollTop || document.body.scrollTop
-        // console.log(curr_sTop);
-        if (curr_sTop > (sTop - 100)) {
-          window.requestAnimationFrame(scrollToTarget)
-          window.scrollTo(0, curr_sTop - 50)
-        }
-      }
-    }
-    scrollToTarget()
+    })
   })
-});
+}
 
-
-// contact form 7 success popup
-if(window.location.hash.match('#wpcf7') != null){
-  Swal.fire({
-    icon: 'success',
-    text: 'Thank you for your message. It has been sent.'
-  })
+// article
+if(document.querySelectorAll('[data-page="article"]').length > 0){
+  import(/* webpackChunkName: "article" */ './ArticlePage')
 }
 
 // product
