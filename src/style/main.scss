@@ -183,6 +183,11 @@ summary {
   background-color: #E6F2FB;
   &::-webkit-details-marker {
     display: none;
+    font-size: 0;
+  }
+  &::marker {
+    display: none;
+    font-size: 0;
   }
   &::before {
     position: absolute;
