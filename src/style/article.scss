@@ -31,6 +31,11 @@ article {
     font-weight: normal;
     font-size: 36px;
     color: #413E3F;
+    @media (max-width: 991px) {
+      font-size: 28px;
+      border-bottom: 2px solid #2C8FFF;
+      padding-bottom: 8px;
+    }
   }
   h3 {
     font-size: 28px;
@@ -137,4 +142,30 @@ article {
       }
     }
   }
+}
+#section-author {
+  @media (max-width: 991px) {
+    background-color: #F7F9FC;
+  }
+}
+.author-photo {
+  height: 70px;
+  margin-top: 6px;
+  @media (min-width: 992px) {
+    height: 110px;
+  }
+}
+.author-desc {
+  @media (max-width: 991px) {
+    position: absolute;
+    left: 20px;
+    width: 90%;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+#article-sidebar {
+  margin-bottom: 0;
 }

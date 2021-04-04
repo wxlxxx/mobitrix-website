@@ -3,6 +3,7 @@ import Swal from 'sweetalert2'
 import CookiesEuBanner from "cookies-eu-banner"
 import lozad from 'lozad'
 import WebFont from 'webfontloader'
+import _siblings from 'siblings'
 
 WebFont.load({
   google: {
@@ -77,13 +78,29 @@ platformToggles.forEach(item => {
   })
 })
 
+// footer
+if(window.innerWidth <= 991){
+  document.querySelectorAll('footer .row h6').forEach((item) => {
+    item.addEventListener('click', () => {
+      if(item.classList.contains('active')){
+        item.classList.remove('active')
+      }else {
+        item.classList.add('active')
+        _siblings(item.parentNode, '.col-lg-3').forEach((item2) => {
+          item2.querySelectorAll('h6')[0].classList.remove('active')
+        })
+      }
+    })
+  })
+}
 
 // contact form
 if(document.querySelectorAll('#form-contact').length > 0){
   document.querySelectorAll('#form-contact')[0].addEventListener('submit', (e) => {
     e.preventDefault()
     let formData = new FormData(e.target)
-    fetch('http://151.106.32.116:8081/contactus', {
+    const url = e.target.getAttribute('action')
+    fetch(url, {
       body: formData,
       method: 'post'
     })
@@ -92,6 +109,28 @@ if(document.querySelectorAll('#form-contact').length > 0){
       if(responseJSON.code == 0){
         Swal.fire({
           text: 'Submitted successfully！'
+        })
+        e.target.reset()
+      }
+    })
+  })
+}
+
+// subscribe
+if(document.querySelectorAll('#form-subscribe').length > 0){
+  document.querySelectorAll('#form-subscribe')[0].addEventListener('submit', (e) => {
+    e.preventDefault()
+    let formData = new FormData(e.target)
+    const url = e.target.getAttribute('action')
+    fetch(url, {
+      body: formData,
+      method: 'post'
+    })
+    .then(response => response.json())
+    .then(responseJSON => {
+      if(responseJSON.code == 0){
+        Swal.fire({
+          text: 'Successfully subscribed'
         })
         e.target.reset()
       }

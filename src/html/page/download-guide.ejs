@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobitrix</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section class="text-center py-5 bg-light">
+        <div class="container py-lg-4">
+          <h1>Mobitrix WhatsApp Transfer</h1>
+          <p class="h5 mb-5">[ Windows Version ]</p>
+          <div class="row text-left align-items-center">
+            <div class="col-lg-6">
+              <div class="p-4 mb-2" style="background-image: linear-gradient(238deg, rgba(244,245,250,0.00) 0%, #E6E8F4 98%);">
+                <h5 class="mb-4">Download or installation fails？<br/>Please try one of the following installation methods:</h5>
+                <div class="row sys-win">
+                  <div class="col-lg-6 px-2 py-2">
+                    <a href="#" class="btn btn-light d-flex align-items-center justify-content-between text-left" style="border-radius: 100px;line-height: 1.2;">
+                      <span class="text-small" style="max-width: 155px;">Zip installation package zhanweizifu</span>
+                      <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="0%" x2="143.037%" y2="100%" id="a"><stop stop-color="#51DAEC" offset="0%"/><stop stop-color="#2CFF92" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="20" cy="20" r="20"/><g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M26.957 18.522l-7.306 6.956-6.608-6.956M12.608 28.956h13.913M19.565 15.043v9.565M19.565 10.152v2.282"/></g></g></svg>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 px-2 py-2">
+                    <a href="#" class="btn btn-light d-flex align-items-center justify-content-between text-left" style="border-radius: 100px;line-height: 1.2;">
+                      <span class="text-small">Offline installation package</span>
+                      <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="0%" x2="143.037%" y2="100%" id="a"><stop stop-color="#51DAEC" offset="0%"/><stop stop-color="#2CFF92" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="20" cy="20" r="20"/><g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M26.957 18.522l-7.306 6.956-6.608-6.956M12.608 28.956h13.913M19.565 15.043v9.565M19.565 10.152v2.282"/></g></g></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row no-gutters sys-mac">
+                  <div class="col-lg-6 px-2 py-2">
+                    <a href="#" class="btn btn-light d-flex align-items-center justify-content-between text-left" style="border-radius: 100px;line-height: 1.2;">
+                      <span class="text-small" style="max-width: 155px;">Zip installation package zhanweizifu</span>
+                      <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="0%" x2="143.037%" y2="100%" id="aa"><stop stop-color="#51DAEC" offset="0%"/><stop stop-color="#2CFF92" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#aa)" cx="20" cy="20" r="20"/><g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M26.957 18.522l-7.306 6.956-6.608-6.956M12.608 28.956h13.913M19.565 15.043v9.565M19.565 10.152v2.282"/></g></g></svg>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 px-2 py-2">
+                    <a href="#" class="btn btn-light d-flex align-items-center justify-content-between text-left" style="border-radius: 100px;line-height: 1.2;">
+                      <span class="text-small">Offline installation package</span>
+                      <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="0%" x2="143.037%" y2="100%" id="aa"><stop stop-color="#51DAEC" offset="0%"/><stop stop-color="#2CFF92" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#aa)" cx="20" cy="20" r="20"/><g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M26.957 18.522l-7.306 6.956-6.608-6.956M12.608 28.956h13.913M19.565 15.043v9.565M19.565 10.152v2.282"/></g></g></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="javascript:;" class="sys-win text-tiny text-muted" data-toggle="platform" data-target="mac">Looking for Mac version, click here</a>
+              <a href="javascript:;" class="sys-mac text-tiny text-muted" data-toggle="platform" data-target="win">Looking for Windows version, click here</a>
+            </div>
+            <div class="col-lg-6">
+              <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/download-guide-banner.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 text-center">
+        <div class="container py-lg-4">
+          <h2 class="mb-5">Where Is My Downloaded Installer?</h2>
+          <div class="row text-left">
+            <div class="col-lg-4 py-3">
+              <div class="mb-2">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/chrome-pic.png" alt="">
+              </div>
+              <div class="d-flex align-items-center pl-2">
+                <img style="width: 50px;height:50px;" src="<%= process.env.IMAGE_PATH %>/chromecolor.png" alt="">
+                <div class="pl-3">
+                  <h5 class="mb-1">For Chrome</h5>
+                  <p class="text-tiny text-muted mb-0">At the bottom of your browser window</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="mb-2">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/firefox-pic.png" alt="">
+              </div>
+              <div class="d-flex align-items-center pl-2">
+                <img style="width: 50px;height:50px;" src="<%= process.env.IMAGE_PATH %>/firefox.png" alt="">
+                <div class="pl-3">
+                  <h5 class="mb-1">For Chrome</h5>
+                  <p class="text-tiny text-muted mb-0">At the bottom of your browser window</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-3">
+              <div class="mb-2">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>/ie-pic.png" alt="">
+              </div>
+              <div class="d-flex align-items-center pl-2">
+                <img style="width: 50px;height:50px;" src="<%= process.env.IMAGE_PATH %>/ie.png" alt="">
+                <div class="pl-3">
+                  <h5 class="mb-1">For Chrome</h5>
+                  <p class="text-tiny text-muted mb-0">At the bottom of your browser window</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-light text-center">
+        <div class="container">
+          <h2 class="mb-4">Useful Tips for Common Issues</h2>
+          <div class="row">
+            <div class="col-lg-6 p-4">
+              <div class="p-4 bg-white" style="border-top: solid 5px #2C8FFF;">
+                <ul class="list-go text-left pt-2">
+                  <li><a href="">How to Get Your iPhone Recognized by Mobitrix?</a></li>
+                  <li><a href="">How to Get Your iPhone Recognized by Mobitrix?</a></li>
+                  <li><a href="">How to Get Your iPhone Recognized by Mobitrix?</a></li>
+                </ul>
+              </div>
+              <img class="position-absolute d-none d-lg-block" style="bottom:20px;left:-60px;width: 100px;" src="<%= process.env.IMAGE_PATH %>/plant-left.png" alt="">
+            </div>
+            <div class="col-lg-6 p-4">
+              <div class="p-4 bg-white" style="border-top: solid 5px #2C8FFF;">
+                <ul class="list-go text-left pt-2">
+                  <li><a href="">How to Get Your iPhone Recognized by Mobitrix?</a></li>
+                  <li><a href="">How to Get Your iPhone Recognized by Mobitrix?</a></li>
+                  <li><a href="">How to Get Your iPhone Recognized by Mobitrix?</a></li>
+                </ul>
+              </div>
+              <img class="position-absolute d-none d-lg-block" style="bottom:20px;right:-50px;width: 100px;" src="<%= process.env.IMAGE_PATH %>/plant-right.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>

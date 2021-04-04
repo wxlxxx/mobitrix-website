@@ -162,6 +162,7 @@ const prodConfig = {
   optimization: {
     splitChunks: {
       chunks: 'initial',
+      minChunks: 2,
       automaticNameDelimiter: '-'
     }
   }

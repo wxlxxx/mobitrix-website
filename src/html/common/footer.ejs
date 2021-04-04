@@ -44,26 +44,22 @@
         <h6 class="mb-lg-5 mb-2">Newsletter</h6>
         <ul class="list-unstyled text-muted">
           <li class="mb-5">
-            <form action="/?na=s" onsubmit="return newsletter_check(this)" class="form-inline flex-nowrap text-nowrap" method="post">
+            <form action="http://151.106.32.116:8081/subscribe" id="form-subscribe" class="form-inline flex-nowrap text-nowrap" method="post">
               <div class="form-group mb-0">
-                <input type="hidden" name="nlang" value="">
-                <input type="hidden" name="nr" value="page">
-                <input type="email" name="ne" required class="form-control rounded-0 bg-transparent text-white" placeholder="* Your Email">
+                <input type="email" name="email" required class="form-control rounded-0 bg-transparent text-white" placeholder="* Your Email">
               </div>
               <button type="submit" class="btn btn-light rounded-0">Join Now</button>
             </form>
           </li>
-          <li>
-            <div class="dropdown">
-              <a class="dropdown-toggle h6" href="javascript:;" data-toggle="dropdown" data-target="#dropdownFooterLink" aria-expanded="false">
-                Change Language
-              </a>
-              <div class="dropdown-menu" style="top: auto;bottom: 150%;" id="dropdownFooterLink">
-                <a class="dropdown-item" href="/">English</a>
-              </div>
-            </div>
-          </li>
         </ul>
+        <div class="dropdown">
+          <a class="dropdown-toggle h6" href="javascript:;" data-toggle="dropdown" data-target="#dropdownFooterLink" aria-expanded="false">
+            Change Language
+          </a>
+          <div class="dropdown-menu" style="top: auto;bottom: 150%;" id="dropdownFooterLink">
+            <a class="dropdown-item" href="/">English</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="text-center text-muted">
