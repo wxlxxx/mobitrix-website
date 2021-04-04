@@ -92,6 +92,20 @@ if(window.innerWidth <= 991){
       }
     })
   })
+  document.querySelectorAll('a[href]').forEach((item) => {
+    if(item.getAttribute('href').match('.exe') != null || item.getAttribute('href').match('.dmg') != null){
+      item.addEventListener('click', (e) => {
+        e.preventDefault()
+        const content = document.querySelectorAll('#get-download-email')[0].cloneNode(true)
+        console.log(content);
+        Swal.fire({
+          position: 'bottom',
+          html: content,
+          showConfirmButton: false
+        })
+      })
+    }
+  })
 }
 
 // contact form
@@ -131,6 +145,28 @@ if(document.querySelectorAll('#form-subscribe').length > 0){
       if(responseJSON.code == 0){
         Swal.fire({
           text: 'Successfully subscribed'
+        })
+        e.target.reset()
+      }
+    })
+  })
+}
+
+// getDownloadEmail
+if(document.querySelectorAll('#form-getDownloadEmail').length > 0){
+  document.querySelectorAll('#form-getDownloadEmail')[0].addEventListener('submit', (e) => {
+    e.preventDefault()
+    let formData = new FormData(e.target)
+    const url = e.target.getAttribute('action')
+    fetch(url, {
+      body: formData,
+      method: 'post'
+    })
+    .then(response => response.json())
+    .then(responseJSON => {
+      if(responseJSON.code == 0){
+        Swal.fire({
+          text: 'Submitted successfully！'
         })
         e.target.reset()
       }

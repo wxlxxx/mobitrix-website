@@ -505,3 +505,7 @@ footer {
 [data-show-store] {
   display: none;
 }
+
+.swal2-html-container .d-none {
+  display: block !important;
+}
