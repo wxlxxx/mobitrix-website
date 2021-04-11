@@ -16,9 +16,9 @@ form.querySelector('#submit').addEventListener('click', (e) => {
 	}
 	let url
 	if(reg.test(email)){
-		url = 'https://api.mobitrix.com/getbackregistrationcode.php?email=' + email
+		url = 'https://ad-fe.mobitrix.com/getbackregistrationcode?email=' + email
 	}else{
-		url = 'https://api.mobitrix.com/getbackregistrationcode.php?order=' + email
+		url = 'https://ad-fe.mobitrix.com/getbackregistrationcode?order=' + email
 	}
 	console.log(url)
 	fetch(url)

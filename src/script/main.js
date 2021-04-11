@@ -103,6 +103,28 @@ if(window.innerWidth <= 991){
           html: content,
           showConfirmButton: false
         })
+        document.querySelectorAll('.swal2-html-container #get-download-email .copy')[0].addEventListener('click', (e) => {
+          e.preventDefault()
+          copyToClip(e.target, e.target.getAttribute('href'))
+        })
+        document.querySelectorAll('.swal2-html-container #form-getDownloadEmail')[0].addEventListener('submit', (e) => {
+          e.preventDefault()
+          let formData = new FormData(e.target)
+          const url = e.target.getAttribute('action')
+          fetch(url, {
+            body: formData,
+            method: 'post'
+          })
+          .then(response => response.json())
+          .then(responseJSON => {
+            if(responseJSON.code == 0){
+              Swal.fire({
+                text: 'Submitted successfully！'
+              })
+              e.target.reset()
+            }
+          })
+        })
       })
     }
   })
@@ -152,40 +174,17 @@ if(document.querySelectorAll('#form-subscribe').length > 0){
   })
 }
 
-// getDownloadEmail
-if(document.querySelectorAll('#form-getDownloadEmail').length > 0){
-  document.querySelectorAll('#form-getDownloadEmail')[0].addEventListener('submit', (e) => {
-    e.preventDefault()
-    let formData = new FormData(e.target)
-    const url = e.target.getAttribute('action')
-    fetch(url, {
-      body: formData,
-      method: 'post'
-    })
-    .then(response => response.json())
-    .then(responseJSON => {
-      if(responseJSON.code == 0){
-        Swal.fire({
-          text: 'Submitted successfully！'
-        })
-        e.target.reset()
-      }
-    })
-  })
-}
-
-function copyToClip(content, message) {
+function copyToClip(ele, content) {
+  if(!ele.classList.contains('copyed')){
     var aux = document.createElement("input");
     aux.setAttribute("value", content);
     document.body.appendChild(aux);
     aux.select();
     document.execCommand("copy");
     document.body.removeChild(aux);
-    if (message == null) {
-        alert("复制成功");
-    } else{
-        alert(message);
-    }
+    ele.innerText = 'Copied'
+    ele.classList.add('copyed')
+  }
 }
 
 // article
