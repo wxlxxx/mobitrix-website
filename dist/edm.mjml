@@ -1,0 +1,58 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#F7F9FC" padding="0">
+      <mj-column>
+        <mj-text align="center" font-family= "Roboto-Regular" font-size="12px">If you cannot view this email, please <a href="#">click here!</a></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="10px 0">
+      <mj-column>
+        <mj-image width="100px" src="./edm-images/logo.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#C3D9FB">
+      <mj-column>
+        <mj-text align="center" font-family= "Roboto-Regular" font-weight="bold" font-size="35px">Transfer Your<br/> WhatsApp History</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#C3D9FB" padding="0">
+      <mj-column>
+        <mj-image padding="0" width="600px" src="./edm-images/banner.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#2C8FFF">
+      <mj-column width="220px">
+        <mj-text font-family= "Roboto-Regular" align="left" font-size="20px;" color="#fff">Coupon for Mobile User</mj-text>
+        <mj-text font-family= "Roboto-Regular" align="left" font-size="20px;" color="#fff">Coupon Code: MOBILE202103</mj-text>
+      </mj-column>
+      <mj-column width="280px">
+        <mj-button background-color="#fff" color="#2C8FFF" font-size="18px;"> <a style="color: #2C8FFF;" href="https://download.mobitrix.com/products/mobitrix_whatsapp_installer.exe">FREE DOWNLOAD</a> <img style="vertical-align: -2px;" src="./edm-images/win.png"/></mj-button>
+        <mj-button background-color="transparent" border="solid 1px #fff" font-size="18px;"> <a style="color:#fff;" href="https://download.mobitrix.com/products/mobitrix-whatsapp-transfer.dmg">FREE DOWNLOAD</a> <img style="vertical-align: -2px;" src="./edm-images/mac.png"/></mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="330px">
+        <mj-text padding="0" font-family= "Roboto-Regular" align="right"><a href="https://www.mobitrix.com/whatsapp-transfer-backup-restore-purchase-win/" style="font-size: 20px;color:#2C8FFF">BUY NOW</a></mj-text>
+      </mj-column>
+      <mj-column width="270px">
+        <mj-image padding="3px 0 0 10px" width="16px" align="left" vertical-align="middle" src="./edm-images/go.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="500px">
+        <mj-text font-family= "Roboto-Regular" align="center" height="50px" font-size="22px;">Benefits that you enjoy when you use Mobitrix are</mj-text>
+        <mj-text font-family= "Roboto-Regular" color="#777676">It secures your data during the transfer.</mj-text>
+        <mj-text font-family= "Roboto-Regular" color="#777676">It is easy to move WhatsApp history and medias between Android and iOS, easy and quick. </mj-text>
+        <mj-text font-family= "Roboto-Regular" color="#777676">It supports all Android and iOS phones. Likewise, it supports all versions of Android and iOS.</mj-text>
+        <mj-text font-family= "Roboto-Regular" color="#777676">Mobitrix WhatsApp Transfer allows you to conduct a full backup from your device onto your PC at zero cost.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#2E2E2E">
+      <mj-column width="500px">
+        <mj-text color="#777676" font-family= "Roboto-Regular" align="center" font-size="12px">You are receiving this e-mail because you signed up to receive newsletters from mobitrix. If you donot want to receive this type of news in the future. Please click to unsubscribe. Please do not reply this letter directly, any questions, Click to contact our support center.</mj-text>
+        <mj-text align="center" font-family= "Roboto-Regular" color="#fff"><a href="https://www.mobitrix.com/about-us" style="color: #fff;">About mobitrix</a>  |  <a href="https://www.mobitrix.com/privacy-policy/" style="color: #fff;">Pribacy Policy</a>  |  <a href="https://www.mobitrix.com/support/" style="color: #fff;">Supprot Team</a></mj-text>
+        <mj-text align="center" font-family= "Roboto-Regular" color="#777676" font-size="12px">Copyright © 2021 mobitrix software Co., Ltd. All Rrights Reserved.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

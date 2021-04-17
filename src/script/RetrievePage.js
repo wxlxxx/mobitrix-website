@@ -27,25 +27,34 @@ form.querySelector('#submit').addEventListener('click', (e) => {
 		Swal.close()
 		flag = false
 		if(responseJSON.code === 1){
-			renderTable(responseJSON.data)
-		}else{
+			if(reg.test(email)){
+				Swal.fire({
+					icon: 'success',
+					text: 'The registration code has been sent to your email ' + email
+				})
+			}else {
+				renderTable(responseJSON)
+			}
+		}else if (responseJSON.code === -2) {
 			Swal.fire({
 				icon: 'info',
+				text: 'You have inquired more than three times today, please try again tomorrow'
+			})
+		}else{
+			Swal.fire({
+				icon: 'error',
 				text: 'Failed to find your code. Please fill in the correct email address or order number.'
 			})
 		}
 	})
 })
 
-function renderTable (arr) {
+function renderTable (obj) {
 	const result = document.querySelector('#result')
 	const table = document.createElement('table')
 	table.className = 'table bg-secondary table-striped mb-5'
 	result.appendChild(table)
-	let items = '<tr><th>Email</th><th>Start Date</th><th>Expiry Date</th><th>Devicenum</th><th>Registration Code</th></tr>';
-	arr.forEach(item => {
-		items = items + `<tr><td>${item.email}</td><td>${item.startDate}</td><td>${item.expiryDate}</td><td>${item.devicenum}</td><td>${item.registrationCode}</td></tr>`
-	})
-	console.log(items)
+	let items = '<tr><th>Email</th><th>Registration Code</th></tr>';
+	items = items + `<tr><td>${obj.email}</td><td>${obj.lisenceid}</td></tr>`
 	table.innerHTML = items
 }

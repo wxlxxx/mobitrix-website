@@ -3,15 +3,15 @@ import countdown from 'countdown'
 import Cookies from 'js-cookie'
 import Swal from 'sweetalert2'
 
-// let end;
-// if(Cookies.get('countdownEnd') && Cookies.get('countdownEnd') > new Date().getTime()){
-//   end = Cookies.get('countdownEnd')
-// }else {
-//   end = new Date().getTime()+1000*2*24*60*60
-// }
-// Cookies.set('countdownEnd', end)
+let end;
+if(Cookies.get('countdownEnd') && Cookies.get('countdownEnd') > new Date().getTime()){
+  end = Cookies.get('countdownEnd')
+}else {
+  end = new Date().getTime()+1000*24*60*60
+}
+Cookies.set('countdownEnd', end)
 
-const end = new Date("2020/12/20").getTime()
+// const end = new Date("2020/12/20").getTime()
 function update(){
   const ts = countdown(end)
   document.querySelectorAll('#days')[0].innerText = ts.days < 10 ? '0'+ts.days : ts.days
