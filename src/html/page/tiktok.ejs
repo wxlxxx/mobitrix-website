@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <style>
+      #download-btn {
+        background-image: linear-gradient(129deg, #44E0D7 0%, #68FF9F 100%);
+        box-shadow: 0 6px 12px 0 rgba(91,244,180,0.23);
+        border-radius: 4px;
+        border-radius: 4px;
+      }
+      #download-btn:hover {
+        background-image: linear-gradient(129deg, #68FF9F 0%, #44E0D7 100%);
+      }
+      input:focus {border: none;outline: none;}
+      .banner {
+        background: url(<%= process.env.IMAGE_PATH %>/campaign/tiktok-banner.png) center no-repeat;background-size: contain;
+      }
+      @media (max-width: 991px) {
+        .banner {
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section class="py-lg-5">
+        <div class="py-5 mb-4 banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-2">
+                <p class="h3 text-white">Mobitrix WhatsApp Transfer</p>
+                <h1 class="mb-4" style="color: #00F7EF;">Great discount for tiktok users</h1>
+                <div class="d-flex mb-4">
+                  <div>
+                    <svg width="43" height="62" viewBox="0 0 43 62" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path stroke="#FFF" stroke-width="3" d="M2 61.518V.977"/><path fill="#FF4242" d="M4.412.215l38.618 10.78L5 31.656z"/></g></svg>
+                  </div>
+                  <div class="pl-3">
+                    <h5 class="text-white">Coupon code：</h5>
+                    <p class="h2" style="color: #00F7EF;">tiktokmobitrix21</p>
+                  </div>
+                </div>
+                <a href="https://download.mobitrix.com/products/mobitrix_whatsapp_installer.exe" class="btn-group hover-unstyled sys-win" id="download-btn" role="group">
+                  <button type="button" class="btn text-white btn-lg text-left font-weight-bold">Transfer WhatsApp Now</button>
+                  <button type="button" class="btn text-white btn-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                      <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                  </button>
+                </a>
+                <a href="https://download.mobitrix.com/products/mobitrix-whatsapp-transfer.dmg" class="btn-group hover-unstyled sys-mac" id="download-btn" role="group">
+                  <button type="button" class="btn text-white btn-lg text-left font-weight-bold">Transfer WhatsApp Now</button>
+                  <button type="button" class="btn text-white btn-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                      <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                  </button>
+                </a>
+                <a href="https://download.mobitrix.com/products/mobitrix_whatsapp_installer.exe" class="btn-group hover-unstyled dev-mobile" id="download-btn" role="group">
+                  <button type="button" class="btn text-white btn-lg text-left font-weight-bold">Transfer WhatsApp Now</button>
+                  <button type="button" class="btn text-white btn-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                      <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pl-lg-5">
+          <div class="pl-lg-5">
+            <h4>Send download link to me</h4>
+            <form action="https://ad-fe.mobitrix.com/senddownurl" method="post" id="form-getDownloadEmail">
+              <div class="row">
+                <div class="col-lg-6 py-3">
+                  <div class="border d-flex p-2">
+                    <div>
+                      <svg width="39" height="29" viewBox="0 0 39 29" xmlns="http://www.w3.org/2000/svg"><g stroke="#666" stroke-width="2" fill="none" fill-rule="evenodd"><rect x="1" y="1" width="37" height="27" rx="5"/><path stroke-linejoin="round" d="M1.902 3l17.122 18L36.146 3"/><path d="M14.268 14L2.854 26M36.146 26L24.732 14"/></g></svg>
+                    </div>
+                    <input class="border-0 w-100 ml-2" type="email" name="email" value="">
+                  </div>
+                </div>
+                <div class="col-lg-3 py-3">
+                  <button class="btn btn-primary btn-lg" type="submit">Send me link</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+      <section class="py-5 bg-light">
+        <div class="container-md py-lg-4">
+          <h3 class="text-center mb-5 font-weight-bold">Hot Tips & Tricks</h3>
+          <div class="row">
+            <div class="col-lg-6 p-4">
+              <div class="rounded overflow-hidden" style="box-shadow: 0 1px 15px 0 rgba(0,0,0,0.12);">
+                <div class="px-4 pt-1 text-white" style="background-image: linear-gradient(236deg, #57C2FF 0%, #2C8FFF 100%);">
+                </div>
+                <div class="p-4">
+                  <ul class="list-go">
+                    <li><a href="">2021 Guide transfer whatsapp to new phone</a></li>
+                    <li><a href="">2021 Guide transfer whatsapp to new phone</a></li>
+                    <li><a href="">2021 Guide transfer whatsapp to new phone</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 p-4">
+              <div class="rounded overflow-hidden" style="box-shadow: 0 1px 15px 0 rgba(0,0,0,0.12);">
+                <div class="px-4 pt-1 text-white" style="background-image: linear-gradient(137deg, #57C2FF 0%, #2C8FFF 100%);">
+                </div>
+                <div class="p-4">
+                  <ul class="list-go">
+                    <li><a href="">2021 Guide transfer whatsapp to new phone</a></li>
+                    <li><a href="">2021 Guide transfer whatsapp to new phone</a></li>
+                    <li><a href="">2021 Guide transfer whatsapp to new phone</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>

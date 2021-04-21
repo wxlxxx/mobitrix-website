@@ -128,6 +128,35 @@ if(window.innerWidth <= 991){
       })
     }
   })
+}else {
+  document.querySelectorAll('a[href]').forEach((item) => {
+    if(item.getAttribute('href').match('.exe') != null){
+      item.addEventListener('click', (e) => {
+        window.open('https://www.mobitrix.com/download-guide.html')
+      })
+    }
+  })
+}
+
+if(document.querySelectorAll('#form-getDownloadEmail').length > 0){
+  document.querySelectorAll('#form-getDownloadEmail')[0].addEventListener('submit', (e) => {
+    e.preventDefault()
+    let formData = new FormData(e.target)
+    const url = e.target.getAttribute('action')
+    fetch(url, {
+      body: formData,
+      method: 'post'
+    })
+    .then(response => response.json())
+    .then(responseJSON => {
+      if(responseJSON.code == 0){
+        Swal.fire({
+          text: 'Submitted successfully！'
+        })
+        e.target.reset()
+      }
+    })
+  })
 }
 
 // contact form
