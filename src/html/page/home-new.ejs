@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.ico" type="image/png">
+    <title>Mobitrix</title>
+    <script src="/assets/pace.min.js"></script>
+    <style>
+      .banner-title {
+       font-weight: bold;
+       line-height: 1.2;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+      }
+      .linear-gradient {
+        background-image: -webkit-linear-gradient(to top right, #674BFF, #E834FF, #FFCB0E);
+        background-image: linear-gradient(to top right, #674BFF, #E834FF, #FFCB0E);
+      }
+      .linear-gradient2 {
+        background-image: -webkit-linear-gradient(to top right, #3192ff, #48afff);
+        background-image: linear-gradient(to top right, #3192ff, #48afff);
+      }
+      .linear-gradient2:hover {
+        background-image: -webkit-linear-gradient(to top right, #48afff, #3192ff);
+        background-image: linear-gradient(to top right, #48afff, #3192ff);
+      }
+      .box {
+        background: url('<%= process.env.IMAGE_PATH %>/home/banner.png') bottom no-repeat;background-size: contain;
+        padding: 40px 0 240px 0;
+        text-align: center;
+      }
+      @media(min-width: 992px) {
+        .banner-title {
+          font-size: 70px;
+        }
+        .box {
+          text-align: left;
+          padding: 80px 0 0;
+          background: url('<%= process.env.IMAGE_PATH %>/home/banner.png') right bottom no-repeat;background-size: auto 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <main>
+      <section style="background: url('<%= process.env.IMAGE_PATH %>/home/bg.png');background-size: cover;">
+        <div class="container box">
+          <div class="row">
+            <div class="col-lg-5 pb-lg-5">
+              <p class="h3 text-white">The World's #1</p>
+              <h1 class="banner-title linear-gradient mb-4">WHATSAPP TRANSFER SOLUTION</h1>
+              <p class="text-white h6 mb-4">Mobitrix develops simple-yet-powerful software that manages your device data and brings convenience to your life.</p>
+              <a class="sys-win btn-group hover-unstyled" href="https://download.mobitrix.com/products/mobitrix_whatsapp_installer.exe" id="article-download-btn" role="group">
+                <button type="button" class="btn border-0 linear-gradient2 text-left text-white font-weight-bold">TRANSFER NOW</button>
+                <button type="button" class="btn border-0 linear-gradient">
+                  <svg width="26" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-9.6%" y="-8.4%" width="119.2%" height="116.7%" filterUnits="objectBoundingBox" id="b"><feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"/><feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 0.306191682 0 0 0 0 0.138715603 0 0 0 0 0.532382246 0 0 0 0.830911276 0" in="shadowInnerInner1"/></filter><path d="M25 4c-4 0-8-1-12-4C9 3 5 4 1 4H0v10c0 8 5 14 13 16 8-2 13-8 13-16V4h-1z" id="a"/></defs><g fill-rule="nonzero" fill="none"><g><use fill="#F9FF05" xlink:href="#a"/><use fill="#000" filter="url(#b)" xlink:href="#a"/></g><path d="M17 14h-3V7L7 17a1 1 0 001 1h3v7l7-10a1 1 0 00-1-1z" fill="#67419E"/></g></svg>
+                </button>
+              </a>
+              <a class="sys-mac btn-group hover-unstyled" href="https://download.mobitrix.com/products/mobitrix-whatsapp-transfer.dmg" id="article-download-btn" role="group">
+                <button type="button" class="btn border-0 linear-gradient2 text-left text-white font-weight-bold">TRANSFER NOW</button>
+                <button type="button" class="btn border-0 linear-gradient">
+                  <svg width="26" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-9.6%" y="-8.4%" width="119.2%" height="116.7%" filterUnits="objectBoundingBox" id="b"><feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"/><feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 0.306191682 0 0 0 0 0.138715603 0 0 0 0 0.532382246 0 0 0 0.830911276 0" in="shadowInnerInner1"/></filter><path d="M25 4c-4 0-8-1-12-4C9 3 5 4 1 4H0v10c0 8 5 14 13 16 8-2 13-8 13-16V4h-1z" id="a"/></defs><g fill-rule="nonzero" fill="none"><g><use fill="#F9FF05" xlink:href="#a"/><use fill="#000" filter="url(#b)" xlink:href="#a"/></g><path d="M17 14h-3V7L7 17a1 1 0 001 1h3v7l7-10a1 1 0 00-1-1z" fill="#67419E"/></g></svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>

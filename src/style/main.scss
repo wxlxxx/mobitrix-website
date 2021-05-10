@@ -58,36 +58,40 @@ body {
 [data-sys="ios"] {
   .sys-win,
   .sys-mac,
-  .sys.android {
+  .sys-android {
     display: none;
   }
 }
 [data-sys="android"] {
   .sys-win,
   .sys-mac,
-  .sys.ios {
+  .sys-ios {
     display: none;
   }
 }
 [data-sys="win"] {
   .sys-android,
   .sys-mac,
-  .sys.ios {
+  .sys-ios {
     display: none;
   }
 }
 [data-sys="mac"] {
   .sys-android,
   .sys-win,
-  .sys.ios {
+  .sys-ios {
     display: none;
   }
 }
 .link-inherit {
   a {
     color: inherit;
-    &:hover {
+    &:hover,
+    &.active {
       color: $primary;
+    }
+    &:focus {
+      text-decoration: none;
     }
   }
 }
@@ -114,6 +118,9 @@ h6,
 }
 main {
   min-height: 100vh;
+}
+.container-sm {
+  max-width: 540px;
 }
 [data-toggle="dropdown"][aria-expanded="true"]::before {
   content: '';
@@ -286,7 +293,7 @@ ul.list-faqs {
   }
 }
 .btn-purchase {
-  background: linear-gradient(to right, #44E0D7, #68FF9F);
+  background-image: linear-gradient(129deg, #15AEA5 0%, #22FF0C 100%);
   color: $white;
   min-width: 200px;
   border-radius: 2px;
