@@ -48,7 +48,7 @@
     "siblings": "^1.0.1",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^9.15.1",
-    "swiper": "^6.5.0",
+    "swiper": "^6.5.1",
     "throttle-debounce": "^2.3.0",
     "webfontloader": "^1.6.28"
   },
